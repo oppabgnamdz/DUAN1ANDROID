@@ -11,16 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.duan1android.MainActivity;
+import com.example.duan1android.Model.Type;
 import com.example.duan1android.R;
-import com.example.duan1android.CategoryStory;
 
 import java.util.ArrayList;
 
 public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategoryStory.MyHolder> {
-    private ArrayList<CategoryStory> items;
+    private ArrayList<Type> items;
     public OnClickItem onClickItem;
 
-    public AdapterCategoryStory(ArrayList<CategoryStory> items) {
+    public AdapterCategoryStory(ArrayList<Type> items) {
         this.items = items;
     }
 
@@ -34,11 +34,11 @@ public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategorySt
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, final int position) {
-        holder.tv1.setText(items.get(position).getName());
-        holder.tv2.setText("Số lượng truyện: " + String.valueOf(items.get(position).getNumber()));
+        holder.tv1.setText(items.get(position).getTypeName());
+        holder.tv2.setText("Số lượng truyện: " + String.valueOf(items.get(position).getTypeCount()));
         holder.tv1.setHeight(MainActivity.height / 20);
         holder.tv2.setHeight(MainActivity.height / 20);
-        holder.image.setImageResource(items.get(position).getSourceImage());
+        holder.image.setImageResource(items.get(position).getImageSource());
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(MainActivity.width / 6, MainActivity.height / 10);
         holder.image.setLayoutParams(layoutParams);
         holder.view.setOnClickListener(new View.OnClickListener() {

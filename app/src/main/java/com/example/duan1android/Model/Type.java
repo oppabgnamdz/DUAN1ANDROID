@@ -4,14 +4,7 @@ public class Type {
     int TypeID;
     String TypeName;
     int TypeCount;
-    public Type(){
-
-    }
-    public Type(String typeName, int TypeCount) {
-        TypeName = typeName;
-        this.TypeID = 0;
-        this.TypeCount = TypeCount;
-    }
+    int imageSource;
 
     public int getTypeID() {
         return TypeID;
@@ -37,12 +30,18 @@ public class Type {
         TypeCount = typeCount;
     }
 
-    @Override
-    public String toString() {
-        return "Type{" +
-                "TypeID=" + TypeID +
-                ", TypeName='" + TypeName + '\'' +
-                ", TypeCount=" + TypeCount +
-                '}';
+    public int getImageSource() {
+        return imageSource;
+    }
+
+    public void setImageSource(int imageSource) {
+        this.imageSource = imageSource;
+    }
+
+    public Type(int typeID, String typeName, int typeCount, int imageSource) {
+        TypeID = typeID;
+        TypeName = typeName;
+        TypeCount = typeCount;
+        this.imageSource = imageSource;
     }
 }

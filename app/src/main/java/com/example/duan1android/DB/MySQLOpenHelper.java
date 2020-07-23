@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class MySQLOpenHelper extends SQLiteOpenHelper {
-    String createType = "CREATE TABLE Type(TypeID integer primary key AUTOINCREMENT, TypeName text, TypeCount integer)";
+    String createType = "CREATE TABLE Type(TypeID integer primary key AUTOINCREMENT, TypeName text, TypeCount integer,ImageSource integer)";
     String createStory = "CREATE TABLE Story(StoryID integer primary key AUTOINCREMENT, TypeName text, StoryName text, StoryContent text, LikeStatus integer)";
     public MySQLOpenHelper(@Nullable Context context) {
         super(context,"MyProject", null, 1);

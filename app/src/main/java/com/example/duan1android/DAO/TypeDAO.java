@@ -22,25 +22,28 @@ public class TypeDAO {
         sqLiteDatabase = mySQLOpenHelper.getWritableDatabase();
     }
 
-    public long insertType(Type type){
+    public long insertType(Type type) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("TypeName", type.getTypeName());
         contentValues.put("TypeCount", String.valueOf(type.getTypeCount()));
+        contentValues.put("ImageSource", String.valueOf(type.getImageSource()));
         long result = sqLiteDatabase.insert("Type", null, contentValues);
         return result;
     }
 
-    public List<Type> getAllType(){
+    public List<Type> getAllType() {
         List<Type> list = new ArrayList<>();
         String querry = "Select * From Type";
         Cursor cursor = sqLiteDatabase.rawQuery(querry, null);
-        if(cursor!=null && cursor.getCount()>0){
+        if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
-            while (!cursor.isAfterLast()){
-                Type type = new Type();
-                type.setTypeID(Integer.parseInt(cursor.getString(0)));
-                type.setTypeName(cursor.getString(1));
-                type.setTypeCount(Integer.parseInt(cursor.getString(2)));
+            while (!cursor.isAfterLast()) {
+
+                int id = Integer.parseInt(cursor.getString(0));
+                String name = cursor.getString(1);
+                int typeName = Integer.parseInt(cursor.getString(2));
+                int imageSource = Integer.parseInt(cursor.getString(3));
+                Type type = new Type(id, name, typeName, imageSource);
                 list.add(type);
                 cursor.moveToNext();
             }
@@ -48,13 +51,14 @@ public class TypeDAO {
         cursor.close();
         return list;
     }
-    public List<String> getAllTypeName(){
+
+    public List<String> getAllTypeName() {
         List<String> list = new ArrayList<>();
         String querry = "Select * From Type";
         Cursor cursor = sqLiteDatabase.rawQuery(querry, null);
-        if(cursor!=null && cursor.getCount()>0){
+        if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
-            while (!cursor.isAfterLast()){
+            while (!cursor.isAfterLast()) {
                 list.add(cursor.getString(1));
                 cursor.moveToNext();
             }
@@ -62,11 +66,13 @@ public class TypeDAO {
         cursor.close();
         return list;
     }
-    public long updateType(Type type){
+
+    public long updateType(Type type) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("TypeName", type.getTypeName());
         contentValues.put("TypeCount", String.valueOf(type.getTypeCount()));
-        long result = sqLiteDatabase.update("Type",contentValues,"TypeID=?",new String[]{String.valueOf(type.getTypeID())});
+        contentValues.put("ImageSource", String.valueOf(type.getImageSource()));
+        long result = sqLiteDatabase.update("Type", contentValues, "TypeID=?", new String[]{String.valueOf(type.getTypeID())});
         return result;
     }
 }
