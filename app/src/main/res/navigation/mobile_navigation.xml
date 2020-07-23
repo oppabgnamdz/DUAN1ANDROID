@@ -22,4 +22,9 @@
         android:name="com.example.duan1android.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_categorystory"
+        android:name="com.example.duan1android.ui.CategoryStory"
+        android:label="Category Story"
+        tools:layout="@layout/fragment_category_story" />
 </navigation>
