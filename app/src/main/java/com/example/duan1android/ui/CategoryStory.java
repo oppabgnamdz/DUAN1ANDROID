@@ -39,7 +39,7 @@ public class CategoryStory extends Fragment {
         stories.add(new com.example.duan1android.CategoryStory("truyện nhật bản",63,R.drawable.police));
         AdapterCategoryStory adapterCategoryStory = new AdapterCategoryStory(stories);
         adapterCategoryStory.onCLick(new AdapterCategoryStory.OnClickItem() {
-            @Override
+            @Override   
             public void callBackClick(int position) {
                 Log.e("position",position+"");
             }
