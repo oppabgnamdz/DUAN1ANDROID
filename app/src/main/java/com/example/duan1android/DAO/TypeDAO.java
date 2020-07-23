@@ -4,8 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-
-
 import com.example.duan1android.DB.MySQLOpenHelper;
 import com.example.duan1android.Model.Type;
 
