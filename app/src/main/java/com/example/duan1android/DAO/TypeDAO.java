@@ -5,8 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.funnystory.DB.MySQLOpenHelper;
-import com.example.funnystory.Model.Type;
+import com.example.duan1android.DB.MySQLOpenHelper;
+import com.example.duan1android.Model.Type;
 
 import java.util.ArrayList;
 import java.util.List;
