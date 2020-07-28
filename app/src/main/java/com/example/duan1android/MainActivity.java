@@ -1,11 +1,15 @@
 package com.example.duan1android;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
+import com.example.duan1android.DAO.TypeDAO;
+import com.example.duan1android.Model.Type;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -18,25 +22,26 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     public static int width;
     public static int height;
     private AppBarConfiguration mAppBarConfiguration;
-
+    TypeDAO typeDAO;
+    Resources resources;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        resources = getResources();
+        typeDAO = new TypeDAO(this);
+        if(typeDAO.getAllType().size() == 0){
+            loadTypeData();
+        }
+        loadStory("Vova");
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -67,4 +72,21 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void loadTypeData(){
+        typeDAO.insertType(new Type(0, "Truyện cười Vova", 10, R.drawable.police));
+        typeDAO.insertType(new Type(0, "Truyện cười Thế Giới", 10, R.drawable.police));
+        typeDAO.insertType(new Type(0, "Truyện cười Việt Nam", 10, R.drawable.police));
+        typeDAO.insertType(new Type(0, "Truyện cười dân gian", 10, R.drawable.police));
+        typeDAO.insertType(new Type(0, "Truyện cười hiện đại", 10, R.drawable.police));
+        typeDAO.insertType(new Type(0, "Truyện cười Tổng hợp", 10, R.drawable.police));
+    }
+    public void loadStory(String name){
+//        String title[] = resources.getStringArray(resources.getIdentifier("listTile"+name, "string", getPackageName()));
+//        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "string", getPackageName()));
+
+        String title[] = resources.getStringArray(resources.getIdentifier("listTitle"+name, "array", getPackageName()));
+        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "array", getPackageName()));
+        Toast.makeText(this, ""+title[0]+content[0], Toast.LENGTH_SHORT).show();
+}
 }

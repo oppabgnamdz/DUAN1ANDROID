@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DUAN1ANDROID</string>
+    <string name="app_name">Trúa h0ề 2020</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -12,4 +12,111 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="listTitleVova">
+        <item>VOVA TRONG GIỜ KỂ CHUYỆN..</item>
+        <item>CHẮC CHẮN LÀ THẾ RỒI!</item>
+        <item>THANH TRA NHẮC BÀI VOVA.</item>
+        <item>VOVA CƯỚP CÔNG BỐ</item>
+        <item>CÁI QUẢ CỦA TÔI ĐEN CHƯA?.</item>
+        <item>VOVA VÀ MỘT GIẤC MƠ</item>
+        <item>THÔNG MINH.</item>
+        <item>CON VẸT PHÁT ĐIÊN.</item>
+        <item>PAPA ĐỂ LÀM GÌ?</item>
+        <item>PHÒNG RIÊNG CỦA VOVA.</item>
+    </string-array>
+    <string-array name="listContentVova">
+        <item>Cô giáo đang đọc truyện “Ba chú heo con” cho các bé nghe đến đoạn một chú heo gặp bác nông dân và xin rơm:
+
+- Bác ơi, cho cháu xin ít rơm nhé!
+
+Cô giáo ngừng lại hỏi Vova:
+
+- Con có biết bác nông dân nói gì không?
+
+Vova :
+
+- Thưa cô, bác ấy bảo: “Trời ơi! Một con heo biết nói!”.
+
+- Cô giáo tức đỏ mặt, vừa học bài “Sự tích bánh chưng, bánh dày”, Cô lại hỏi tiếp:
+
+-Thế em có biết bánh chưng có từ bao giờ không?
+
+- Tính theo mùa thì có từ giáp Tết, tính theo ngày thì có tại hàng quà sáng lúc 5 giờ ạ!
+
+Cô giáo tức không chịu được liền mắng :
+
+- Em có biết tuần này đã bị điểm 2 lần thứ ba rồi không? Vova :
+
+- Thưa cô, em đã hiểu ý nghĩa câu: “Ghét của nào trời trao của ấy”.</item>
+        <item>Trong lớp học, cô giáo đang giảng bài.
+- Cô giáo : Người khôn ngoan luôn luôn biết nghi ngờ, còn kẻ ngu dốt thì lúc nào cũng tuyên bố chắc chắn.
+- Vova: Thưa cô ! Cô tin chắc chứ ?
+- Cô giáo: Chắc chắn</item>
+        <item>Thanh tra trên bộ xuống kiểm tra giờ học anh văn, ông ta ngồi bên cạnh Vova.Cô giáo mới đi dạy vì vậy rất hồi hộp.Cô giáo:
+- Bây giờ cô sẽ viết 1 câu tiếng anh lên bảng, còn các em hãy cố gắng dịch nó ra tiếng Nga.
+Cô giáo đang viết dở câu thì viên phấn bị rơi, cô cúi xuống nhặt và tiếp tục viết cho hết câu.
+- Và bây giờ ai sẽ dịch được câu này?
+Vova lập tức giơ tay. Cô giáo thì rất run, nhìn quanh lớp nhưng ngoài Vova ra thì chẳng có ai giơ tay cả. Cô giáo đành chỉ định Vova phát biểu.
+Vova:
+- Giá như mà cái váy nó ngắn hơn ……..
+- Cái gì?! Em biến ngay khỏi lớp học!
+Vova thu gom sách vở xong dứ dứ nắm đấm vào mặt ông thanh tra:
+- Đồ ngu, đã không biết thì đừng có bày trò nhắc bài!</item>
+        <item>Mẹ Vova sinh em bé. Mọi người đến chúc mừng:
+- Anh giỏi quá, sinh được cháu bé kháu khỉnh và giống anh như đúc!
+- Ê. . ê, đấy là công của cháu, bố cháu làm được gì nào!
+- Thằng này láo! Tao hì hục mãi, công của mày là thế nào? – bố Vova quát.
+- Đấy là do con lấy kim chọc thủng tất cả comdom mà lại!. .</item>
+        <item>Vova đang phải đeo mặt nạ ôxy quanh mồm nằm trong bệnh viện.
+
+Cô y tá trẻ trung xinh đẹp bước vào lau chùi mặt mũi chân tay cho anh.
+
+- Cô y tá – anh ta thều thào – Cái quả của tôi đen chưa?
+
+Bối rối, cô y tá trả lời:
+
+- Tôi không biết, tôi đến đây để rửa mặt, rửa tay cho anh thôi.
+
+Vova cố ngóc đầu lên thều thào lần nữa:
+
+- Y tá, cái quả của tôi đen chưa?
+
+- Tôi không biết – Cô y tá xấu hổ nói xong chạy ào ra ngoài.
+
+Cô đem chuyện này kể cho y tá trưởng, một người gan dạ. Cô này chạy vào, thể theo yêu cầu bệnh nhân, lột quần anh ta ra xem xét cẩn thận rồi thông báo:
+
+- Không sao đâu! Vẫn bình thường, không đen!
+
+Vova đau khổ cố với tay kéo mặt nạ ôxy ra hỏi lần nữa:
+
+- Y tá, tôi hỏi là hỏi “kết quả xét nghiệm của tôi đến chưa“?</item>
+        <item>Lần nọ, Vova nằm mơ thấy mình trở thành một ông hiệu trưởng. Trong một buổi nói chuyện với học sinh, ông nói:
+
+- Các em phải biết một điều, đức là cái gốc của con người. Con người có thể thiếu tài nhưng không thể thiếu đức. Xã hội tồn tại được là nhờ vào cái gốc, tức là cái đức. Tài có thể ví như cái áo, đức ví như cái quần. Không mặc áo ở trần còn coi được, nhưng mặc áo mà chẳng mặc quần thì khó coi ghê lắm.</item>
+        <item>Natasha đi học vể hớn hở bảo mẹ, mẹ ơi, hôm nay con kiếm được 2 rúp.
+- Ở đâu ra thế?
+- Thằng Vova đố con trèo lên cây, mỗi lần nó cho 10 kopec.
+- Mày bị nó lừa rồi, nó làm thế để nhìn quần xilip của mày đấy.
+- Hihi.., con biết rồi, con đâu phải đứa ngu? Cho nên hôm nay con đâu có mặc
+quần xilip!!!</item>
+        <item>Thầy giáo cảnh cáo học sinh:
+-Không bao giờ được hôn động vật, sẽ bị lây các bệnh khác nhau. Ai có thể đưa ra ví dụ?
+-Em ạ -Vova đứng dậy- Cô em luôn hôn con vẹt của mình.
+-Thì sao??…
+-Con vẹt phát điên</item>
+        <item>Vova hỏi mẹ:
+- Mama, Có phải sự thật là chúng ta được chúa nuôi không?
+- Nói chung là vậy.
+- Còn trẻ con thì được sinh ra bằng rốn!.
+- Hiển nhiên.
+- Còn quà thì được ông già tuyết tặng?
+- Đúng.
+- Vậy thì chúng ta cần Papa để làm gì?!</item>
+        <item>Bố Vôva đến đón con ở nhà trẻ, vào phòng thứ nhất có biẻn đề “học sinh ngoan” nhìn quanh không thấy Vôva đâu cả.
+
+Vào phòng thứ 2 “học sinh trung bình” không thấy Vôva
+Vào phòng thứ 3 “học sinh cá biệt” vẫn không thấy Vôva
+Vào phòng thứ 4 “học sinh đặc biệt hư” cũng không thấy Vôva đâu
+Bố Vôva đi đến cuối hành lang, thấy có một phòng nhỏ, biển treo bên ngoài đề “Vôva”.</item>
+    </string-array>
 </resources>
