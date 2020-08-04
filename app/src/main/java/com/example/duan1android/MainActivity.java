@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         if (typeDAO.getAllType().size() == 0 && storyDao.getAllStory().size() == 0) {
             loadTypeData();
             loadStory("Vova");
+            loadStory("Thế Giới");
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -89,11 +90,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void loadStory(String name) {
+        String name2 = name;
 //        String title[] = resources.getStringArray(resources.getIdentifier("listTile"+name, "string", getPackageName()));
 //        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "string", getPackageName()));
-
-        String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name, "array", getPackageName()));
-        String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name, "array", getPackageName()));
+        switch (name) {
+            case "Thế Giới":
+                name2 = "TheGioi";
+        }
+        String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name2, "array", getPackageName()));
+        String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name2, "array", getPackageName()));
         for (int i = 0; i < title.length; i++) {
             storyDao.insertStory(new Story(1, "Truyện cười " + name, title[i], content[i], 0));
         }
