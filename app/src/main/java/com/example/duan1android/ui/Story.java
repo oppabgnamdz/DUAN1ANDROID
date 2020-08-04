@@ -56,6 +56,11 @@ public class Story extends Fragment {
             case 0:
                 stories = storyDao.getAllStory("Truyện cười Vova");
                 adapterStory = new AdapterStory(stories);
+                break;
+            case 1:
+                stories = storyDao.getAllStory("Truyện cười Thế Giới");
+                adapterStory = new AdapterStory(stories);
+                break;
 
         }
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

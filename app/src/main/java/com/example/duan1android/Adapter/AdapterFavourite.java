@@ -46,7 +46,7 @@ public class AdapterFavourite extends RecyclerView.Adapter<AdapterFavourite.View
         if (stories.get(position).getLikeStatus() == 0) {
             holder.imageStory.setImageResource(R.drawable.favourite);
         } else {
-            holder.imageStory.setImageResource(R.drawable.yes);
+            holder.imageStory.setImageResource(R.drawable.no);
         }
         holder.view.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.nav_currentstory, bundle));
         holder.imageStory.setOnClickListener(new View.OnClickListener() {

@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         if (typeDAO.getAllType().size() == 0 && storyDao.getAllStory().size() == 0) {
             loadTypeData();
             loadStory("Vova");
+            loadStory("Thế Giới");
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -62,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
         width = display.getWidth();
         height = display.getHeight();
         Log.e("data", "" + width + " " + height);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 
     @Override
@@ -82,27 +90,17 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void loadStory(String name) {
+        String name2 = name;
 //        String title[] = resources.getStringArray(resources.getIdentifier("listTile"+name, "string", getPackageName()));
 //        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "string", getPackageName()));
-        String type = "";
-        switch (name){
-            case "Vova":type = "Truyện cười Vova";
-                break;
-            case "tg": type = "Truyện cười Thế Giới";
-                break;
-            case "vn" : type = "Truyện cười Việt Nam";
-                break;
-            case "dg" : type = "Truyện cười dân gian";
-                break;
-            case "hd" : type = "Truyện cười hiện đại";
-                break;
-            case "th" : type = "Truyện cười Tổng hợp";
-                break;
+        switch (name) {
+            case "Thế Giới":
+                name2 = "TheGioi";
         }
-        String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name, "array", getPackageName()));
-        String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name, "array", getPackageName()));
+        String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name2, "array", getPackageName()));
+        String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name2, "array", getPackageName()));
         for (int i = 0; i < title.length; i++) {
-            storyDao.insertStory(new Story(1, type, title[i], content[i], 0));
+            storyDao.insertStory(new Story(1, "Truyện cười " + name, title[i], content[i], 0));
         }
     }
 }

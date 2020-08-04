@@ -12,6 +12,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    vova-->
     <string-array name="listTitleVova">
         <item>VOVA TRONG GIỜ KỂ CHUYỆN..</item>
         <item>CHẮC CHẮN LÀ THẾ RỒI!</item>
@@ -119,4 +120,118 @@ Vào phòng thứ 3 “học sinh cá biệt” vẫn không thấy Vôva
 Vào phòng thứ 4 “học sinh đặc biệt hư” cũng không thấy Vôva đâu
 Bố Vôva đi đến cuối hành lang, thấy có một phòng nhỏ, biển treo bên ngoài đề “Vôva”.</item>
     </string-array>
+    <!--    thegioi-->
+    <string-array name="listTitleTheGioi">
+        <item>VẮT SỮA BÒ</item>
+        <item>THEO TRÍ NHỚ…</item>
+        <item>BAO CHE..</item>
+        <item>HỘI THI KHOA HỌC KỸ THUẬT.</item>
+        <item>AI Ở BẨN NHẤT?</item>
+        <item>HỘI NGHỊ QUỐC TẾ VIỆT NAM..</item>
+        <item>SINH VIÊN MARKETING</item>
+        <item>CHỊU ĐƯỢC MÙI HÔI</item>
+        <item>Ở VIỆT NAM..</item>
+        <item>ADAM VÀ EVA..</item>
+    </string-array>
+    <string-array name="listContentTheGioi">
+        <item>Ở Mỹ hằng năm đều tổ chức cuộc thi vắt sữa bò. Năm nay, qua vòng loại ban tổ chức chọn được ba thí sinh vào chung kết.
+
+Anh chàng đến từ Úc sau 2h đã bước ra với 6 thùng sữa lớn
+anh chàng từ Hà Lan cũng sau 2 h nhưng anh lại vắt đựoc tới 8 thùng
+Chàng Trai Vn đi vào và bắt đầu vắt…1h …..2h…3….. trôi qua.
+BTC đợi mãi không thấy anh chàng VN bước ra nên đoán anh ta sẽ thua. Đang định trao giải cho anh chàng Hà Lan thì anh VN bước ra với 1/2 thùng sữa
+BTC hỏi :
+-tại sao trong vòng 4h mà anh chỉ vắt được bằng này sữa?
+anh chàng đến từ VN trả lời!
+-Tiên sư bố thằng nào nó đưa nhầm cho tôi con bò đực, được 1/2 thùng là khá lắm rồi đấy!
+Và thế là anh nông dân VN đã được trao giải nhất</item>
+        <item>Grace và Mary học cùng một trường. Cặp đôi này vừa có một kỳ nghỉ hè hết sức thú vị tại một miền quê. Tại đó họ còn làm quen với một họa sỹ tài ba cũng đang đi vẽ cảnh nông thôn. Ít lâu sau, trở về thành phố, họ nhận được nhận lời mời của ông họa sỹ này đến xem cuộc trưng bày tranh của ông ta.
+
+Lúc họ đến gần một bức tranh khỏa thân vẽ hết sức táo bạo. Grace không thể không nhận thấy cô gái trong tranh giống hệt cô bạn gái Mary của mình.
+- Mary, cậu hổn hển: Bức tranh này giống hệt em, chẳng lẽ em lại làm mẫu khỏa thân cho ông ấy?
+- Tất nhiên là không , Mary đỏ mặt lắp bắp: hẳn là ông ấy vẽ bức tranh dựa theo trí nhớ.</item>
+        <item>Một hôm Peter đang đi giữa đêm thì bị cảnh sát tóm, vì trông giống một tên tội phạm.
+
+- Anh tên là gì? Nhà ở đâu?
+
+- Peter, 321 cao ốc O. đường Baker.
+
+Một lát sau:
+
+-Chúng tôi đã điều tra kĩ, ở số nhà trên, không có ai là Peter cả.
+
+Thấy Peter cứ một mực cãi rằng đó là nhà của anh ta, cảnh sát bực quá, đánh cho anh ta một trận và nhốt vào trong đồn một tuần lễ. Khi được thả ra, mặt mũi anh ta vẫn còn sưng vù. Vừa trông thấy Peter, anh bạn cùng phòng kéo ngay vào phòng và đóng sập cửa lại:
+
+- Mấy bữa trước, có một lũ cớm tới đây hỏi cậu, chắc lại có vụ nào béo bở hả, thấy cậu đi cả tuần lễ… bộ cậu đánh nhau với ai sao mà trông kì thế?
+
+- Ðâu có tớ bị người ta đánh… nhưng…
+
+- Thôi kệ nó, bỏ qua đi… thế cậu tìm được mối làm ăn nào thế?
+
+- Ðâu có!!!???
+
+- Khỏi cần giấu tớ, yên tâm đi, không ai biết đâu, bữa trước bọn cớm hỏi cậu, tớ đã trả lời rằng chẳng có Peter nào ở đây cả, chúng nản quá bỏ đi hết rồi… ha ha… đúng là bọn ngốc…</item>
+        <item>Trong hội thi Ðỉnh cao Khoa học Kỹ thuật Thế giới, các cường quốc trên thế giới đang đưa ra những bằng chứng để chứng tỏ mình có trình độ khoa học cao nhất:
+
+Ðại diện của Nhật đứng lên phát biểu: “Chúng tôi vừa mới hoàn thiện một loại tàu vũ trụ mới không người lái, dùng để thám hiểm sao Hoả. Tính năng tác dụng của tàu này thì nhiều vô kể, nhưng nổi bật nhất là nó có khả năng bay sát bề mặt Sao hoả..”
+Ban giám khảo nhao nhao phản đối: “Phét, làm sao có thể bay sát được. Bề mặt sao Hoả rất gồ ghề..”
+Ðại diện của Nhật cắt lời: “Tất nhiên. Chúng tôi phải có một sai số khoảng 20cm”
+Ðến lượt đại diện của Mỹ: “Chúng tôi cũng vừa chế tạo ra tàu ngầm loại mới, có thể lặn sâu và đi sát lòng biển..”
+Ban giám khảo cũng không tin: “Làm sao đi sát được? Bề mặt của đáy biển cũng rất lồi lõm..”
+“Phải, cũng như Nhật Bản, tàu của chúng tôi có sai số là 20cm”
+Bỗng đại diện Việt Nam lên tiếng: “Nếu như vậy, nước tôi vừa phát kiến ra phương pháp đẻ bằng rốn..”
+Cả ban giám khảo, đại diện Nhật, đại diện Mỹ đều phản đối: “Không thể có chuyện ấy được!?!”
+Ðại diện Việt Nam bình thản nói : “Dĩ nhiên, chúng tôi cũng có tính tới sai số là 20cm..”</item>
+        <item>Trong hội thi Ðỉnh cao Khoa học Kỹ thuật Thế giới, các cường quốc trên thế giới đang đưa ra những bằng chứng để chứng tỏ mình có trình độ khoa học cao nhất:
+
+Ðại diện của Nhật đứng lên phát biểu: “Chúng tôi vừa mới hoàn thiện một loại tàu vũ trụ mới không người lái, dùng để thám hiểm sao Hoả. Tính năng tác dụng của tàu này thì nhiều vô kể, nhưng nổi bật nhất là nó có khả năng bay sát bề mặt Sao hoả..”
+Ban giám khảo nhao nhao phản đối: “Phét, làm sao có thể bay sát được. Bề mặt sao Hoả rất gồ ghề..”
+Ðại diện của Nhật cắt lời: “Tất nhiên. Chúng tôi phải có một sai số khoảng 20cm”
+Ðến lượt đại diện của Mỹ: “Chúng tôi cũng vừa chế tạo ra tàu ngầm loại mới, có thể lặn sâu và đi sát lòng biển..”
+Ban giám khảo cũng không tin: “Làm sao đi sát được? Bề mặt của đáy biển cũng rất lồi lõm..”
+“Phải, cũng như Nhật Bản, tàu của chúng tôi có sai số là 20cm”
+Bỗng đại diện Việt Nam lên tiếng: “Nếu như vậy, nước tôi vừa phát kiến ra phương pháp đẻ bằng rốn..”
+Cả ban giám khảo, đại diện Nhật, đại diện Mỹ đều phản đối: “Không thể có chuyện ấy được!?!”
+Ðại diện Việt Nam bình thản nói : “Dĩ nhiên, chúng tôi cũng có tính tới sai số là 20cm..”</item>
+        <item>Hội nghị Quôc tế Việt Nam đăng cai. Chủ tịch Triết mời Tổng thống mỹ BUSH và TT Nga MEDVEDEV thăm Hà Nội bằng trực thăng. Ba vị nguyên thủ ngồi trên máy bay.
+
+TT Bush tỏ ra hoành tráng: Bọn mày có tin tao ném xấp tiền 100 USD xuống là hôm sau cả Hà Nội xôn xao không?
+MEDVEDEV cũng ko kém: Thế bọn mày tin tao ném cái bóp tao xuống, hôm sau cả Việt Nam xôn xao không?
+Mr Triết cười nhạt: Thế bọn mày có tin tao túm cổ thằng phi công ném xuống, hôm sau cả thế giới xôn xao không?</item>
+        <item>Có 3 anh sinh viên học marketing mới ra trường đến một công ty nọ xin việc. Một anh người Pháp, một anh người Mỹ và một anh người Vietnam. Giám đốc công ty trực tiếp phỏng vấn:
+-Hiện nay sản phẩm của chúng tôi là máy giặt đang tung ra bán trên thị trường, các cậu thử đề xuất một chương trình quảng cáo truyền hình cho sản phẩm đó. Ai thông minh nhất sẽ dc nhận.
+Anh người Pháp trả lời ngay:
+-Cho một chiếc áo bẩn vào trong máy giặt, vài phút sau lấy ra chiếc áo trắng sạch tinh.
+-Như thế thì thường quá, ai chẳng làm được-Ông GĐ trả lời.
+Anh người Mỹ sau 5 phút suy nghĩ:
+-Cho một chiếc áo hoa vào máy, vài phút sau lấy ra chiếc áo trắng tinh.
+-Có sáng tạo, nhưng ai còn dám cho áo hoa vào giặt, ko dc.
+Anh người Vietnam lúc đấy mới mỉm cười:
+-Ban đầu cho vào máy một anh chàng da đen, vài phút sau mở máy, bước ra một anh chàng da trắng.
+-Great answer-Ông GĐ kêu lên-Anh được nhận vào làm ở Cty</item>
+        <item>Có ba người thi xem ai chịu được mùi hôi của heo lâu nhất:
+
+-Người thứ nhất: vào chuồng heo được hai ngày thi chạy ra bảo:" hôi quá chịu không nổi"
+
+-Người thứ hai: vào được ba ngày thì chạy ra không nói được gì
+
+-Người thứ ba: vào được một tuần thi chú heo chạy ra và bất tỉnh nhân sự</item>
+        <item>
+            Ở nước Mỹ: 1 thằng con trai phải biết dùng súng.
+
+Ở nước Đức: 1 thằng con trai phải biết hách dịch và ko được sợ vợ.
+
+Ở Hàn Quốc: Con trai phải sành điệu hơn con gái.
+
+Ở Trung Quốc: 1 thằng con trai phải biết chơi game.
+
+Nhưng tất cả vẫn chưa là gì với Việt Nam: 1 thằng con trai thì phải dám đâm thẳng vào hàng xăng rồi thét: đầy bình cho bố
+        </item>
+        <item>Một người Pháp, một người Mỹ và một người VN tranh luận xem Adam và Eva là người nước nào.
+
+Người Pháp: “Trần truồng và trụy lạc ngay trước mặt Thượng đế như thế, chỉ có thể là dân Pháp”.
+Người Mỹ: “Yêu tự do đến mức lẽ ra có thể sống hạnh phúc, chỉ cần đừng đụng đến trái táo, vậy mà họ vẫn không chịu nổi sự cấm đoán đó thì chỉ có thể là dân Mỹ”.
+Người VN lúc này mới lên tiếng: “Quần áo chẳng có, nhà cửa chẳng có, thậm chí đến ăn một trái táo cũng bị cấm, thế mà vẫn bảo là sống trên thiên đường. Đích thị đây là dân VN”.</item>
+    </string-array>
+
 </resources>
