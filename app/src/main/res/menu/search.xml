@@ -7,4 +7,12 @@
         android:icon="@drawable/search"
         app:showAsAction="always"
         app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/action_sort_az"
+        android:title="Sắp xếp A-Z"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/action_sort_za"
+        android:title="Sắp xếp Z-A"
+        app:showAsAction="never"></item>
 </menu>

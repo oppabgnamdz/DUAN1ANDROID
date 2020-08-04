@@ -18,13 +18,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.duan1android.Adapter.AdapterCategoryStory;
 import com.example.duan1android.DAO.TypeDAO;
 import com.example.duan1android.Model.Type;
+import com.example.duan1android.NameCompare;
 import com.example.duan1android.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class CategoryStory extends Fragment {
@@ -75,5 +78,22 @@ public class CategoryStory extends Fragment {
                 return false;
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.action_sort_az){
+//            Toast.makeText(getContext(), "ok", Toast.LENGTH_SHORT).show();
+//            Log.e("list", stories.toString());
+            Collections.sort(stories,new NameCompare());
+//            Log.e("list", stories.toString());
+            adapterCategoryStory.notifyDataSetChanged();
+        }
+        else if(item.getItemId() == R.id.action_sort_za){
+            Collections.sort(stories,new NameCompare());
+            Collections.reverse(stories);
+            adapterCategoryStory.notifyDataSetChanged();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

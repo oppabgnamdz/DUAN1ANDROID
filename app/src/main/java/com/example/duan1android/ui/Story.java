@@ -20,9 +20,12 @@ import android.widget.SearchView;
 
 import com.example.duan1android.Adapter.AdapterStory;
 import com.example.duan1android.DAO.StoryDao;
+import com.example.duan1android.NameCompare;
 import com.example.duan1android.R;
+import com.example.duan1android.StoryNameCompare;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class Story extends Fragment {
@@ -88,5 +91,21 @@ public class Story extends Fragment {
                 return false;
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.action_sort_az){
+//            Toast.makeText(getContext(), "ok", Toast.LENGTH_SHORT).show();
+//            Log.e("list", stories.toString());
+            Collections.sort(stories,new StoryNameCompare());
+//            Log.e("list", stories.toString());
+            adapterStory.notifyDataSetChanged();
+        }
+        else if(item.getItemId() == R.id.action_sort_za){
+            Collections.sort(stories,new StoryNameCompare());
+            Collections.reverse(stories);
+            adapterStory.notifyDataSetChanged();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
