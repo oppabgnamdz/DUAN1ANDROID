@@ -14,16 +14,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.duan1android.DAO.StoryDao;
 import com.example.duan1android.Model.Story;
+import com.example.duan1android.Model.Type;
 import com.example.duan1android.R;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class AdapterStory extends RecyclerView.Adapter<AdapterStory.ViewHolder> {
     ArrayList<Story> stories;
     StoryDao storyDao;
-
+    ArrayList<Story> backupList;
     public AdapterStory(ArrayList<Story> stories) {
         this.stories = stories;
+        backupList = new ArrayList<>();
+        backupList.addAll(stories);
     }
 
     @NonNull
@@ -88,5 +92,19 @@ public class AdapterStory extends RecyclerView.Adapter<AdapterStory.ViewHolder> 
             this.imageStory = itemView.findViewById(R.id.imageStory);
             this.view = itemView;
         }
+    }
+    public void filter(String charText) {
+        charText = charText.toLowerCase(Locale.getDefault());
+        stories.clear();
+        if (charText.length() == 0) {
+            stories.addAll(backupList);
+        } else {
+            for (Story story : backupList) {
+                if (story.getStoryName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                    stories.add(story);
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 }
