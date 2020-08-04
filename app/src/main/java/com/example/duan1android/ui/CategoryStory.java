@@ -3,6 +3,7 @@ package com.example.duan1android.ui;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,11 +19,7 @@ import com.example.duan1android.R;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CategoryStory#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class CategoryStory extends Fragment {
     ArrayList<Type> stories;
     TypeDAO typeDAO;
@@ -38,12 +35,6 @@ public class CategoryStory extends Fragment {
         typeDAO = new TypeDAO(getContext());
         stories = (ArrayList<Type>) typeDAO.getAllType();
         AdapterCategoryStory adapterCategoryStory = new AdapterCategoryStory(stories);
-        adapterCategoryStory.onCLick(new AdapterCategoryStory.OnClickItem() {
-            @Override
-            public void callBackClick(int position) {
-                Log.e("position", position + "");
-            }
-        });
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapterCategoryStory);

@@ -1,5 +1,6 @@
 package com.example.duan1android.Adapter;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.duan1android.MainActivity;
@@ -18,7 +20,6 @@ import java.util.ArrayList;
 
 public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategoryStory.MyHolder> {
     private ArrayList<Type> items;
-    public OnClickItem onClickItem;
 
     public AdapterCategoryStory(ArrayList<Type> items) {
         this.items = items;
@@ -34,6 +35,8 @@ public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategorySt
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, final int position) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("position", position);
         holder.tv1.setText(items.get(position).getTypeName());
         holder.tv2.setText("Số lượng truyện: " + String.valueOf(items.get(position).getTypeCount()));
         holder.tv1.setHeight(MainActivity.height / 20);
@@ -41,12 +44,7 @@ public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategorySt
         holder.image.setImageResource(items.get(position).getImageSource());
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(MainActivity.width / 6, MainActivity.height / 10);
         holder.image.setLayoutParams(layoutParams);
-        holder.view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onClickItem.callBackClick(position);
-            }
-        });
+        holder.view.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.nav_story, bundle));
     }
 
     @Override
@@ -67,11 +65,6 @@ public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategorySt
             image = view.findViewById(R.id.image);
         }
     }
-    public void onCLick(OnClickItem onClickItem){
-        this.onClickItem = onClickItem;
-    }
 
-    public interface OnClickItem {
-        void callBackClick(int position);
-    }
+
 }

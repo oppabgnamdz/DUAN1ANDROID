@@ -8,7 +8,9 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.example.duan1android.DAO.StoryDao;
 import com.example.duan1android.DAO.TypeDAO;
+import com.example.duan1android.Model.Story;
 import com.example.duan1android.Model.Type;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -29,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
     public static int height;
     private AppBarConfiguration mAppBarConfiguration;
     TypeDAO typeDAO;
+    StoryDao storyDao;
     Resources resources;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,16 +42,17 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         resources = getResources();
         typeDAO = new TypeDAO(this);
-        if(typeDAO.getAllType().size() == 0){
+        storyDao = new StoryDao(this);
+        if (typeDAO.getAllType().size() == 0 && storyDao.getAllStory().size() == 0) {
             loadTypeData();
+            loadStory("Vova");
         }
-        loadStory("Vova");
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_categorystory)
+                R.id.nav_categorystory, R.id.nav_story, R.id.nav_favourite, R.id.nav_currentstory, R.id.nav_about)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -73,20 +78,24 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void loadTypeData(){
-        typeDAO.insertType(new Type(0, "Truyện cười Vova", 10, R.drawable.police));
-        typeDAO.insertType(new Type(0, "Truyện cười Thế Giới", 10, R.drawable.police));
-        typeDAO.insertType(new Type(0, "Truyện cười Việt Nam", 10, R.drawable.police));
-        typeDAO.insertType(new Type(0, "Truyện cười dân gian", 10, R.drawable.police));
-        typeDAO.insertType(new Type(0, "Truyện cười hiện đại", 10, R.drawable.police));
-        typeDAO.insertType(new Type(0, "Truyện cười Tổng hợp", 10, R.drawable.police));
+    public void loadTypeData() {
+        typeDAO.insertType(new Type(0, "Truyện cười Vova", 10, R.drawable.vova));
+        typeDAO.insertType(new Type(0, "Truyện cười Thế Giới", 10, R.drawable.thegioi));
+        typeDAO.insertType(new Type(0, "Truyện cười Việt Nam", 10, R.drawable.vietnam));
+        typeDAO.insertType(new Type(0, "Truyện cười dân gian", 10, R.drawable.truyencuoidangian));
+        typeDAO.insertType(new Type(0, "Truyện cười hiện đại", 10, R.drawable.hiendai));
+        typeDAO.insertType(new Type(0, "Truyện cười Tổng hợp", 10, R.drawable.tonghop));
     }
-    public void loadStory(String name){
+
+
+    public void loadStory(String name) {
 //        String title[] = resources.getStringArray(resources.getIdentifier("listTile"+name, "string", getPackageName()));
 //        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "string", getPackageName()));
 
-        String title[] = resources.getStringArray(resources.getIdentifier("listTitle"+name, "array", getPackageName()));
-        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "array", getPackageName()));
-        Toast.makeText(this, ""+title[0]+content[0], Toast.LENGTH_SHORT).show();
-}
+        String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name, "array", getPackageName()));
+        String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name, "array", getPackageName()));
+        for (int i = 0; i < title.length; i++) {
+            storyDao.insertStory(new Story(1, "Truyện cười " + name, title[i], content[i], 0));
+        }
+    }
 }

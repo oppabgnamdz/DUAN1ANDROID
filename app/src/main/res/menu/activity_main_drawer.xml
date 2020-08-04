@@ -5,21 +5,22 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
             android:id="@+id/nav_categorystory"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Category Story" />
+            android:icon="@drawable/category"
+            android:title="Thể loại truyện" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/favourite"
+            android:title="Yêu thích" />
+        <item
+            android:id="@+id/nav_currentstory"
+            android:icon="@drawable/current"
+            android:title="Đang đọc" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="Giới thiệu" />
 
     </group>
 </menu>

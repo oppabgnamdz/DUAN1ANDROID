@@ -11,7 +11,7 @@ import com.example.duan1android.Model.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TypeDAO {
+public class  TypeDAO {
     MySQLOpenHelper mySQLOpenHelper;
     SQLiteDatabase sqLiteDatabase;
     Context context;

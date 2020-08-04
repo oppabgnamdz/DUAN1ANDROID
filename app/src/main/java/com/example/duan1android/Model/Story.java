@@ -7,14 +7,15 @@ public class Story {
     String StoryContent;
     int LikeStatus;
 
-    public Story(int storyID, String storyType, String storyName, String storyContent) {
+    public Story(int storyID, String storyType, String storyName, String storyContent, int status) {
         StoryID = storyID;
         StoryType = storyType;
         StoryName = storyName;
         StoryContent = storyContent;
-        this.LikeStatus = 0;
+        this.LikeStatus = status;
     }
-    public Story(){
+
+    public Story() {
 
     }
 

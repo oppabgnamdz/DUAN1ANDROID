@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/download"
+        android:icon="@drawable/smile"
         android:label="Truyện cười 2020"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/smile"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity

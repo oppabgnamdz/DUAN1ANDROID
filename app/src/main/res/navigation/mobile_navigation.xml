@@ -3,28 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_categorystory">
 
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.duan1android.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.duan1android.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.duan1android.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_categorystory"
         android:name="com.example.duan1android.ui.CategoryStory"
-        android:label="Category Story"
+        android:label="Thể Loại Truyện"
         tools:layout="@layout/fragment_category_story" />
+
+    <fragment
+        android:id="@+id/nav_story"
+        android:name="com.example.duan1android.ui.Story"
+        android:label="Danh Sách Truyện"
+        tools:layout="@layout/fragment_story" />
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.example.duan1android.ui.Favourite"
+        android:label="Yêu thích"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/nav_currentstory"
+        android:name="com.example.duan1android.ui.CurrentStory"
+        android:label="Đang đọc"
+        tools:layout="@layout/fragment_current_story" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.duan1android.ui.About"
+        android:label="Giới thiệu"
+        tools:layout="@layout/fragment_about" />
 </navigation>
