@@ -65,13 +65,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
@@ -91,11 +84,25 @@ public class MainActivity extends AppCompatActivity {
     public void loadStory(String name) {
 //        String title[] = resources.getStringArray(resources.getIdentifier("listTile"+name, "string", getPackageName()));
 //        String content[] = resources.getStringArray(resources.getIdentifier("listContent"+name, "string", getPackageName()));
-
+        String type = "";
+        switch (name){
+            case "Vova":type = "Truyện cười Vova";
+                break;
+            case "tg": type = "Truyện cười Thế Giới";
+                break;
+            case "vn" : type = "Truyện cười Việt Nam";
+                break;
+            case "dg" : type = "Truyện cười dân gian";
+                break;
+            case "hd" : type = "Truyện cười hiện đại";
+                break;
+            case "th" : type = "Truyện cười Tổng hợp";
+                break;
+        }
         String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name, "array", getPackageName()));
         String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name, "array", getPackageName()));
         for (int i = 0; i < title.length; i++) {
-            storyDao.insertStory(new Story(1, "Truyện cười " + name, title[i], content[i], 0));
+            storyDao.insertStory(new Story(1, type, title[i], content[i], 0));
         }
     }
 }

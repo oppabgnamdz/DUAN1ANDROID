@@ -17,12 +17,15 @@ import com.example.duan1android.Model.Type;
 import com.example.duan1android.R;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategoryStory.MyHolder> {
     private ArrayList<Type> items;
-
+    ArrayList<Type> backupList;
     public AdapterCategoryStory(ArrayList<Type> items) {
         this.items = items;
+        backupList = new ArrayList<>();
+        backupList.addAll(items);
     }
 
     @NonNull
@@ -66,5 +69,18 @@ public class AdapterCategoryStory extends RecyclerView.Adapter<AdapterCategorySt
         }
     }
 
-
+    public void filter(String charText) {
+        charText = charText.toLowerCase(Locale.getDefault());
+        items.clear();
+        if (charText.length() == 0) {
+            items.addAll(backupList);
+        } else {
+            for (Type type : backupList) {
+                if (type.getTypeName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                    items.add(type);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
 }
