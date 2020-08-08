@@ -233,5 +233,465 @@ Người Pháp: “Trần truồng và trụy lạc ngay trước mặt Thượn
 Người Mỹ: “Yêu tự do đến mức lẽ ra có thể sống hạnh phúc, chỉ cần đừng đụng đến trái táo, vậy mà họ vẫn không chịu nổi sự cấm đoán đó thì chỉ có thể là dân Mỹ”.
 Người VN lúc này mới lên tiếng: “Quần áo chẳng có, nhà cửa chẳng có, thậm chí đến ăn một trái táo cũng bị cấm, thế mà vẫn bảo là sống trên thiên đường. Đích thị đây là dân VN”.</item>
     </string-array>
+    <string-array name="listTitleVietNam">
+        <item>AI LÀ NGƯỜI “ĐÀN ÔNG” NHẤT?</item>
+        <item>THI BẮN CUNG</item>
+        <item>THUẦN PHỤC VOI</item>
+        <item>CHÉM GIÓ</item>
+        <item>MỘT NỐT NHẠC</item>
+        <item>LẠC VÀO HOANG ĐẢO</item>
+        <item>BƠI VƯỢT CHƯỚNG NGẠI VẬT</item>
+        <item>SỰ CAN ĐẢM VÀ GAN DẠ</item>
+        <item>LỰA CHỌN GIỮA SỐNG VÀ CHẾT</item>
+        <item>Tranh luận hoa nước nào đẹp nhất?</item>
+    </string-array>
+    <string-array name="listContentVietNam">
+        <item>Một ngày đẹp trời 3 người đàn ông đại diện cho 3 châu lục họp nhau lại, quyết định mở cuộc thi xem ai là người “đàn ông” nhất hành tinh. Muốn thế mỗi người phải đi qua 3 cái phòng: to, đẹp…
 
+Phòng 1 có 1000 lít rượu, phòng 2 có 1 con hổ hung dữ, phòng 3 có một… cô gái trẻ, đẹp, xinh, dễ thương, đáng iu…(mệt quá)! Ai muốn giật giải phải uống hết 1000 lít rượu, đánh chít con hổ, và phải … xxx 1000 lần với cô gái (ặc).
+
+Mỹ tự hào với sức khỏe vô địch lao vào phòng con hổ trước. 2 ngày 3 đêm sau, người ta khuân xác anh vứt ra ngoài.
+
+Pháp tự hào với sự lãng mạn và quyến rũ, vào phòng cô gái trẻ trước. Được 231 lần… xxx thì người ta khuân xác vứt ra ngoài.
+
+Còn mỗi bố Việt nam, chặc lưỡi: thôi làm phát rượu đã tính gì tính sau. Uống hết 1000 lít rượu, bố lảo đảo sang phòng con hổ. Con hổ gầm rú gào thét kinh hoàng suốt một ngày, sáng hôm sau người ta vào mang xác con hổ vứt ra ngoài.
+
+Bấy giờ bố Việt Nam lảo đảo bước ra, lè nhè:
+
+“Say quá, có ai chỉ cho tôi biết phòng con hổ ở đâu không?”</item>
+        <item>Người Trung Quốc đặt quả táo lên đầu 1 cô gái xinh đẹp, lùi xa 100m, giương cung. Mũi tên lao đi vun vút, bửa đôi quả táo.
+
+Anh ta nói: “I’m Sinbad”.
+
+Người Nhật đặt quả chanh lên đầu 1 cô gái xinh đẹp khác, lùi xa 150m, giương cung. Mũi tên lao đi vun vút, xuyên qua quả chanh.
+
+Anh ta nói: “I’m Robin Hood”.
+
+Người cuối cùng Việt Nam nhìn 2 đối thủ đầy vẻ khinh bỉ. Anh ta đặt 1 trái sơri lên đầu cô gái xinh đẹp nhất, lùi xa 200m, giương cung. Mũi tên lao đi vun vút.
+
+Anh ta nói: “I’m …sorry”.</item>
+        <item>Có cuộc thi điều khiển voi giữa ba nước: Mỹ, Nga và Việt Nam.
+
+Mở đầu cuộc thi là làm sao để con voi đực nhảy lên nhảy xuống. Nga gắn lò xo cho voi nhưng chỉ nhảy được một cái rồi té. Mỹ mở nhạc hết cỡ cho con voi có hứng nhảy, nhưng qua hết 10 album nó chỉ vẫn nhấc được hai chân. Tới Việt Nam, nhẹ nhàng và ko tốn kém, “đấm” vào chỗ ấy của con voi… thế là nó nhảy như điên.
+
+Tới vòng hai, làm sao cho con voi lắc đầu. Mỹ và Nga cố cầm đầu con voi mà lắc nhưng méo được. Việt Nam nhẹ nhàng ghé sát tai con voi và nói: “mày có muốn giống hồi nãy nữa không cưng?”. Con voi lắc đầu như điên.</item>
+        <item>3 nhà lãnh đạo của 3 nước: Mỹ, Nga và Việt Nam đang ngồi máy bay trên bầu trời Việt Nam thì tổng thống Bush nói:
+
+– Chúng mày có tin tao thả 100 USD xuống thì cả Hà Nội xôn xao không?
+
+Putin cũng không vừa liền nói:
+
+– Thế mày tin tao thả cái vali xuống thì cả Việt Nam xôn xao không?
+
+Lúc này Bác Triết mới lên tiếng:
+
+– Thế chúng mày có tin tao ném thằng phi công xuống thì hôm sau cả thế giới xôn xao không?</item>
+        <item>Năm 2010 có 1 đoàn tàu xuyên quốc gia đi qua tất cả các nước trên thế giới. Trên tàu có 1 ông giáo sư bảo rằng cứ đi qua đất nước nào ông ta không cần nhìn cũng biết. Mọi người ko tin bèn bảo ông ta làm thử.
+
+Ông ta thò tay ra ngoài cửa sổ đoàn tàu: “- Ở đây nóng quá! Chắc là California Mỹ rồi!”.
+
+Một lúc sau ông ta lại thò tay ra ngoài và bảo: “- Chà! Lạnh thật! Đến Matxcova rồi!”.
+
+Đúng 2h sau ông ta thò tay ra cửa sổ rồi rụt vào nói: “- Mất cái đồng hồ đeo tay. Đây đúng là Việt Nam rồi”.</item>
+        <item>Có ba chú Mỹ, Pháp, Việt nam đi chơi trên tàu, bị đắm, dạt vào hoang đảo. Một vị thần hiện lên, bảo: “Ta cho mỗi người các ngươi một điều ước”.
+
+Chú Mỹ bảo: “Con ước gì được về lại Mỹ”. Thế là chú ta thấy mình về lại Mỹ, lái xe vèo vèo ở New York.
+
+Chú Pháp bảo: “Con ước gì được về lại Pháp”. Thế là chú ta lại về Pháp, thấy mình đang loăng quăng ngắm gái ở chân tháp Eiffel.
+
+Chú Việt nam bảo: “Ước gì hai thằng kia quay trở lại đây với con”.
+
+Thế là cả ba chú lại cùng ngồi méo mặt trên hoang đảo.</item>
+        <item>Nước Nga tổ chức Thế vận hội OLYMPIC. Thấy thằng em Việt Nam bao năm lăn lộn mà chưa được cài huy chương vàng nào cả. Năm đó, các nội dung thi có nội dung: “Bơi vượt chướng ngại vật!”.
+
+Điều đặc biệt là nội dung thi không được nêu rõ, nước nào tham gia thi thì đăng ký đến ngày đến thi đấu luôn!
+
+Ngày thi đấu nội dung “Bơi vượt chướng ngại vật”. 10 nước có nền thể thao “Đường đua xanh” nổi bật tập trung tại điểm xuất phát. Ngoài ra có Việt Nam nữa. Vỗ tay!!!
+
+Hồ bơi rộng mênh mông, ban tổ chức phổ biến nội dung: ai bơi đến đích đầu tiên là đạt huy chương vàng. Có chút lưu ý là cần vượt qua chướng ngại vật. Rồi có 10 xe tải quân sự đặc chủng của Nga chạy vào cạnh hồ bơi, mở thùng ra, trên mỗi xe có… 10 con cá sấu Amazon thuộc loại “hàng khủng”. Cá sấu được đổ xuống hồ.
+
+Trọng tài bắn súng xuất phát. 11 VĐV im lặng nuốt nước bọt nhìn đàn cá sấu. Bỗng VĐV Việt Nam nhảy ùm xuống nước, tay chân đập loạn xạ về phía đích. Bám đích nhảy lên bờ trong tiếng vỗ tay hoan hô cùng ánh đèn FLASH và máy quay. Huy chương vàng được xác lập. Các phóng viên đua nhau đưa ra câu hỏi: ”Động lực nào làm anh dũng cảm thế?”
+
+VĐV gạt đám đông bước ra ngoài. Câu hỏi lại tiếp tục: “Anh tìm ai? Ai sẽ là người được anh thông báo đầu tiên?”.
+
+“Đ.mẹ, tao tìm thằng điên nào đẩy tao xuống hồ cá sấu, may bơi được qua bờ mà lên không thì… Đ.m nó thằng nào… Đ.m nó. Són ra wần còn đâu!”</item>
+        <item>Hôm đó các vị tướng của Mỹ, Trung quốc, Việt Nam đang ngồi… nhậu với nhau. Lúc cao hứng, cả ba liền đề nghị thử xem lính của ai gan dạ hơn.
+
+Đầu tiên vị tướng Thuỷ Quân Lục Chiến Mỹ nói với tên lính hầu cận: “Mày leo lên tàu, chạy ra ngoài khơi nhảy xuống cho cá mập ăn đi”. Tên lính gật đầu: “Sure!” rồi nhảy xuống bể cá mập, máu loang tung toé.
+
+Vị tướng Pháo binh của Trung Quốc cũng không vừa, nói với người lính của mình: “Mày leo vào khẩu pháo, cho tao châm ngòi bắn vào bức tường kia nhen”. Tên lính mặt tái méc, leo vào khẩu pháo. Vị tướng châm ngòi, pháo nổ cái bùm, máu thịt văng cái phọt, dính vào bức tường cái pẹt… nhầy nhụa gớm ghiếc không thể tả.
+
+Vị tướng thứ 3 của Việt Nam, quay qua nói với anh lính của mình: “Mày làm gì cũng được, mà phải can đảm hơn 2 thằng hùi nãy nghen”. Anh lính quay qua nói: “Cục c**, éo làm!!!”</item>
+        <item>Trên 1 chuyến máy bay có 2 người Việt Nam, 2 người Nhật, 2 người Pháp và 2 người Đức. Chuyến bay vào vùng gió xoáy của Bão lớn.
+
+Cơ trưởng thông báo và phi hành đoàn yêu cầu phải hy sinh bớt số người trên máy bay để giảm tải trọng, hy sinh cứu những người còn lại.
+
+Nghe thế, lập tức 2 người Pháp đứng dậy hét lớn: “tinh thần napoleon bất diệt!!!” rồi nhảy xuống.
+
+Bay được thêm 1 lúc, tình thế yêu cầu muốn đảm bảo an toàn phải hy sinh bớt số người trên máy bay để giảm tiếp tải trọng.
+Không chần chừ, 2 người Nhật đứng dậy hét lớn: “tinh thần samurai bất diệt!!!!” rồi nhảy xuống.
+
+Bay được 1 lúc, phi hành đoàn nói nếu hy sinh 2 người nữa để giảm tải trọng thì sẽ an toàn, nếu không khả năng sẽ rơi!!!
+Lập tức, 2 người Việt đứng dậy hô to: “Việt Nam vô địch!!!!” rồi đạp 2 thằng Đức xuống!!!</item>
+        <item>Trong 1 cuộc thảo luận gồm 4 nước: Việt Nam, Nhật, Mỹ và Hà Lan.
+Nước Nhật khoe: – Nước tui có hoa anh đào là đẹp nhất!!.
+
+Việt Nam tiếp: – Đáng để lót đít ngồi. Mỹ , Hà Lan: – Đúng, đúng…
+
+Đến Mỹ khoe: – Nước tôi có hoa hồng đẹp nhất!
+
+Việt Nam: – Đáng để lót đít ngồi. Nhật, Hà Lan: – Đúng, đúng…
+
+Hà Lan vội khoe về nước mình: – Còn nước tui có hoa Tulip là đẹp nhất!!
+
+Việt Nam lại nói: – Đáng để lót đít ngồi.
+
+Cả ba nước cay lắm nên quay sang Việt Nam hỏi:
+
+– Thế nước chúng mày có hoa gì đẹp nào?
+
+Việt Nam thản nhiên đáp:
+
+– Có xương rồng (ngon mầy lót đít ngồi đi).</item>
+    </string-array>
+    <string-array name="listTitleDanGian">
+        <item>Câu đối có chí khí</item>
+        <item>Làm theo</item>
+        <item>Đố nhau</item>
+        <item>Đánh thế còn nhẹ</item>
+        <item>Bánh tao đâu</item>
+        <item>Nhưng nó phải bằng hai mày!</item>
+        <item>Sĩ diện</item>
+        <item>Sợ vợ</item>
+        <item>Hổ phụ sinh hổ tử</item>
+        <item>Câu đối có chí khí</item>
+    </string-array>
+    <string-array name="listContentDanGian">
+        <item>Ông huyện đi dọc đường, gặp thằng con nít đi học về, mới kêu mà ra câu hỏi rằng :
+
+– Tự là chữ, cất dằn đầu, chữ tử là con, con nhà ai đó?
+
+Ðứa học trò chí khí đối lại liền:
+
+– Vu là chưng, cất ngang lưng, chữ đinh là đứa, đứa hỏi ta chi?
+
+Ông huyện nghe biết đứa có chí khí, tức lắm mà không làm gì được.</item>
+        <item>Bà mẹ dặn con trai mới dạm vợ:
+
+– Sang nhà bên ấy, thấy bố vợ làm gì thì phải làm theo nghe con!
+
+– Vâng! Con nhớ rồi!
+
+Ðến nơi, thấy bố vợ đang ngồi tréo mảy uống trà, anh ta liền đến kéo ghế, ngồi tréo mảy bên cạnh, rót nước uống tự nhiên. Ông bố vợ nổi giận, vừa lúc thấy con chó đến gần, ông ta giơ chân đá nó một cái. Con chó kêu “oẳng” một tiếng rồi chạy đi. Chàng rể vội kêu lên:
+
+– Ðứng lại cho tao đá, rồi hãy chạy!</item>
+        <item>Mấy anh đố nhau. Anh thứ nhất nói:
+
+– Càng đắp càng bé là gì?
+
+Mọi người nghĩ mãi, rồi đành chịu. Anh này tự trả lời:
+
+– Người ta đào ao, lấy đất đắp vào bờ bên trong. Càng đắp thì cái ao càng bé lại.
+
+Anh thứ hai đố:
+
+– Càng kéo càng ngắn là gì?
+
+Mọi người cũng chịu cả. Anh ta giải thích:
+
+– Là điếu thuốc lá. Cứ kéo một hơi là nó lại ngắn đi một chút.
+
+Anh thứ ba hỏi:
+
+– Thế càng vặn càng vẹo là gì?
+
+Mọi người càng chịu, cho là anh ta chơi chữ. Anh này cười bảo:
+
+– Đâu mà chơi chữ! Chỉ là hai người cùng giặt một cái chăn. Đến lúc vắt nước, mỗi người cầm một đầu chăn bằng hai tay thật chặt, vặn xoắn vào. Được một lúc thì cả hai đều vẹo mình đi, mỗi người về một phía.
+
+Đến lượt anh thứ tư, anh này lửng khửng bảo:
+
+– Càng to càng bé là gì?
+
+Mọi người cười bò ra, phán đoán đủ kiểu. Anh ta chỉ lắc đầu, mãi sau mới nói:
+
+– Con cua nó có hai càng. Một càng to, một càng bé.</item>
+        <item>Có một anh nông dân về nhà ăn cơm trưa, thấy món rau xào hôm nay rất ngon, liền hỏi vợ:
+
+– Rau xào hôm nay sao ngon thế?
+
+Vợ đắc ý khoe:
+
+– Hôm nay có hai người mua chung một miếng mỡ lợn, trên đường đi qua nhà mình đã mượn dao để chia, em đã rửa con dao dính mỡ lợn vào chảo, nên rau mới ngon như thế đấy!
+
+Anh chồng nghe xong, tiện tay tát cho vợ một cái, mắng:
+
+– Tại sao không rửa vào vại nước để mà ăn mấy ngày?
+
+Vợ rất uất ức chạy sang bên cạnh mách tội của chồng với ông chú. Chú nghe xong quát tướng lên:
+
+– Đánh thế hãy còn nhẹ, sao không rửa dao dưới ao, để chúng tao cũng được ăn?</item>
+        <item>Ông thầy đồ nọ vốn tính tham ăn. Bữa ấy có người mời đi ăn cỗ, thầy mới cho một cậu học trò nhỏ theo hầu.
+
+Ðến nơi, thầy ngồi vào cỗ, bảo học trò đứng bên cạnh. Trông thấy trong mâm cỗ còn nhiều bánh trái, bụng no nhưng thầy lại muốn bỏ túi mấy chiếc. Sợ người chung quang nom thấy thì mất thể diện, thầy mới cầm bánh thản nhiên đưa cho học trò, bảo:
+
+– Này, con cầm lấy!
+
+Vừa đưa, thầy vừa nháy ra hiệu bảo cất mang về cho thầy.
+
+Cậu học trò không hiểu được cái nháy mắt thâm thúy của thầy, tưởng thầy cho thật, liền bóc ngay ra ăn.
+
+Thầy nhìn thấy, giận lắm, nhưng giữa đông đủ mọi người, không dám mắng. Ðến lúc ra về, thầy vẫn còn tiếc mấy cái bánh, muốn kiếm cớ để trả thù học trò. Khi hai thầy trò đang cùng đi ngang nhau, thầy bèn giận dữ mắng học trò:
+
+– Mày là anh em bạn với tao hay sao mà dám đi ngang hàng với tao?
+
+Trò sợ, vội vàng đi nhanh lên trước. Thầy lại gắt:
+
+– Mày là bố tao hay sao mà dám đi trước tao?
+
+Trò tụt lùi lại sau. Thầy lại quát:
+
+– Tao có phải là thằng tù đâu mà mày phải đi sau áp giải.
+
+Trò ngơ ngác quay lại thưa:
+
+– Bẩm bẩm, con đi thế nào thầy cũng mắng, vậy xin thầy bảo cho con nên thế nào cho phải ạ?
+
+Thầy chẳng ngần ngại gì nữa, hầm hầm bảo:
+
+– Thế bánh tao đâu…?</item>
+        <item>Làng kia có một tên lí trưởng nổi tiếng xử kiện giỏi.
+
+Một hôm nọ, Cải với Ngô đánh nhau, rồi mang nhau đi kiện. Cải sợ kém thế, lót trước cho thầy lí năm đồng. Ngô biện chè lá những mười đồng. Khi xử kiện, thầy lí nói:
+
+– Thằng Cải đánh thằng Ngô đau hơn, phạt một chục roi.
+
+Cải vội xoè năm ngon tay, ngẩng mặt nhìn thầy lí khẽ bẩm:
+
+– Xin xét lại, lẽ phải về con mà!
+
+Thầy lí cũng xoè năm ngón tay trái úp lên năm gón tay mặt, nói:
+
+– Tao biết mày phải… nhưng nó lại phải… bằng hai mày!</item>
+        <item>Một người nghèo nọ thường hay che đậy giấu giếm cảnh khổ. Lần kia gặp bạn, bạn mời đi ăn cơm. Ông ta ưỡn bụng từ chối: “Tớ vừa xơi thịt chó xong không nuốt nổi cơm đâu. Có điều uống vài cốc rượu thì được.”
+
+Vài cốc rượu xuống bụng xong anh ta say quá nên ọc hết đống thịt chó ban nãy ăn ở nhà ra.
+
+Hôm sau, bạn hỏi ông ta: “Anh bảo là ăn thịt chó sao hôm qua lại ói ra cám. Thế nghĩa là sao?”
+
+Người đó ngẫm nghĩ rồi chép miệng: “Có lẽ con chó đó ăn cám mà tớ không biết.”</item>
+        <item>Có anh nọ xưa nay rất là sợ vợ. Vợ nó quát tháo thế nào, anh ta cũng ngậm miệng, không dám cãi một lời. Anh ta đi đánh bạc, mãi xẩm tối mới về. Thổi cơm ăn xong, chị vợ ngồi chờ chồng mỏi mắt. Chị ta tức lắm. Khi anh chồng vừa mới ló mặt vào ngõ, chị ta đã chạy ra túm ngực lôi vào nhà, gầm rít.
+
+Anh ta vừa gỡ tay vợ túm ngực, vừa kêu xin:
+
+– Bỏ tôi ra! Tôi xin bu nó!
+
+Chị vợ được thể càng làm già, túm luôn tóc ấn đầu anh ta xuống. Anh ta liền vung tay gạt ngã chị vợ, tát cho luôn chị vợ mấy cái, rồi trợn mắt, quát:
+
+– Người ta đã sợ thì để cho người ta sợ chứ!</item>
+        <item>Hai cha con nhà kia đều nóng nảy ngang ngạnh, không nhường nhịn ai chút nào. Một hôm, nhà có khách, người cha sai con vào thành mua thịt về nhắm rượu. Người con mua miếng thịt ngon đem về, vừa sắp ra khỏi cổng thành, bỗng đụng ngay một người từ ngoài thành vào, hai người không ai chịu nhường đường đi, cùng ưỡn ngực nghênh nhau chắn ngang lối đi.
+
+Ở nhà chờ lâu không thấy, người cha đi tìm con. Đến nơi, thấy tình hình như vậy liền bảo:
+
+– Con hãy cầm thịt về trước làm cơm mời khách xơi, để cha ở đây cùng y đứng nghênh nhau tiếp!</item>
+        <item>Ông huyện đi dọc đường, gặp thằng con nít đi học về, mới kêu mà ra câu hỏi rằng :
+
+– Tự là chữ, cất dằn đầu, chữ tử là con, con nhà ai đó?
+
+Ðứa học trò chí khí đối lại liền:
+
+– Vu là chưng, cất ngang lưng, chữ đinh là đứa, đứa hỏi ta chi?
+
+Ông huyện nghe biết đứa có chí khí, tức lắm mà không làm gì được.</item>
+    </string-array>
+    <string-array name="listTitleHienDai">
+        <item>Chuyện Luật Sư</item>
+        <item>Không phải chuyện nhỏ</item>
+        <item>Trắc nghiệm tâm lý</item>
+        <item>Con vật kỳ lạ</item>
+        <item>Bố kẻ bị nạn</item>
+        <item>Thua 3-1 nhưng còn lãi 7 đồng</item>
+        <item>Trượt chân</item>
+        <item>Bí mật khủng khiếp</item>
+        <item>Bước chuẩn bị gay cấn</item>
+        <item>Có giỏi cũng không thắng được!</item>
+    </string-array>
+    <string-array name="listContentHienDai">
+        <item>Một ông luật sư vừa mở cửa chiếc xe BMW bước xuống đường thì bổng đâu có một xe khác phóng nhanh qua và quạt mất cái cửa xe của chiếc BMW . Khi cảnh sát đến hiện trường thì thấy ông ta đang nhảy nhỏm có vẻ tức giận lắm, thấy vị cảnh sát ông ta gằn giọng phàn nàn:
+
+– Ông xem, chúng làm thiệt hại nặng nề cho cái xe BMW mới của tôi đến thế này này.
+
+Vị cảnh sát quan sát hiện trường rồi nói:
+
+– Bọn luật sư các ông chỉ coi vật chất là trên hết! Ông chỉ quan tâm đến cái xe BMW mắc dịch này mà chẳng biết rằng cái cánh tay trái của ông cũng đã bị quật rụng mất tiêu rồi!
+
+Ông luật sư kinh hoảng khi nhìn thấy cánh tay mình đã cụt mất, và kêu toáng lên:
+
+– Tôi phải tìm nó ngay. Tôi đeo cái đồng hồ Rolex ở cổ tay đó , mau mau tìm giùm tôi đi, mau lên mau lên!!!</item>
+        <item>Bạn tù hỏi nhau:
+
+– Tại sao anh phải vào đây?
+
+– Tôi bỏ vợ…
+
+– Thế thôi sao? Chuyện nhỏ mà!
+
+– … từ trên lầu ba xuống.</item>
+        <item>Chồng bàn với vợ:
+
+– Anh đặt lên bàn ba thứ để xem con mình sẽ lấythứ gì. Nếu nó lấy tờ 100 USD, tương lai nó sẽ là nhà tài chính.Nếu lấy cây viết, nó sẽ là nhà văn, còn nếu cầm quyển kinh thì nósẽ làm linh mục.
+
+Lát sau, cậu con vào phòng vớ cả ba thứ rồi chạyra ngoài. Trong khi vợ còn đần mặt trước tình huống bất ngờ, chồng lẩm bẩm:
+
+– Phương án thứ tư…
+
+Vợ sốt ruột hỏi:
+
+– Là sao hở anh?
+
+– Là ăn cướp chứ còn sao nữa!</item>
+        <item>Một cô gái tóc vàng xinh đẹp dáo để đi về quê thăm bà con. Bên vệ đường cô nhìn thấy một con vật rất kỳ lạ, nên thắc mắc hỏi một nông dân đứng gần đó:
+
+– Xin bác giải thích cho cháu biết vì sao con bò này không có sừng ạ?
+
+Ông ta ngước đầu lên nhìn sững vào cô ta một lúc rồi từ từ giải thích:
+
+– Thưa bà, có những con vật có sức mạnh phi thường hay dùng cái sừng của mình để gây tai hoạ. Do đó chúng tôi phải đối phó với chúng bằng cách dùng cưa cắt cho ngắn bớt. Sau đó nhểu lên đó vài giọt axit cho cặp sừng không bao giờ mọc được nữa. Còn trường hợp con bò này không có sừng, bởi vì nó là… con ngựa ạ!</item>
+        <item>Một vụ tai nạn giao thông vừa xảy ra ngoài phố. Mọi người tò mò chen lấn vòng trong vòng ngoài để xem. Một anh línhđến chậm không tài nào vào xem được. Tức quá, anh ta liền hét toáng lên:
+
+– Tôi là bố kẻ bị nạn đây!
+
+Mọi người kinh ngạc quay lại nhìn và vội vã giãn ra cho anh ta vào. “Kẻ bị nạn” là một… chú chó vừa bị xe cán chết.</item>
+        <item>Một gã trẻ tuổi gặp một ông già. Đang huênh hoang muốn khoe trình độ mình hơn người, gã bèn rủ:
+
+– Tôi với ông so kiến thức bằng cách đố nhau nhé!
+
+Ông già đắn đo, gã bèn đặt thêm điều kiện:
+
+– Nếu thắng ông được 10 đồng, nếu thua ông chỉ mất 1 đồng thôi!
+
+– Nhất trí, anh đố trước đi.
+
+– Thế tay nào lên vũ trụ đầu tiên?
+
+Ông già không trả lời, lẳng lặng rút tờ 1 đồngtrả cho gã trẻ tuổi. Được thể, hắn hỏi tiếp:
+
+– Thế ai phát minh ra định luật bảo toàn khối lượng?
+
+Chịu. Lại 1 tờ nữa.
+
+– Thôi, anh đố nhiều rồi. Để tôi đố anh 1 câu được không?
+
+– Đồng ý!
+
+– Con gì lên đồi bằng 2 chân, còn xuống đồi bằng 3 chân?
+
+Sau một hồi lâu suy nghĩ, gã thanh niên quyết định rút tờ 10 đồng ra, đưa cho đối thủ và hỏi lại:
+
+– Không biết! Thế con gì đấy hả ông?
+
+Ông già lẳng lặng rút tiếp tờ 1 đồng đưa cho gã trẻ.</item>
+        <item>Chuyện kể rằng: Có một hồ nước thiêng ở Canada. Ai muốn ước gì cứ nói lời ước của mình rồi nhảy xuống hồ tắm là được toại nguyện. Thế là mọi người từ khắp nơi trên thế giới kéo nhau đến rất đông. Người thì ước thành gấu trắng, người thì muốn thành đại bàng và có người còn ước thành hoa anh đào nữa. Có một anh đến bên hồ, hấp tấp thế nào lại trượt chân, vội thốt lên “Oh,SHIT!” và … rơi tõm xuống hồ.</item>
+        <item>– Bí mật khủng khiếp đây! Đã có năm mươi nạn nhân! Mua báo không ông?
+
+Khách qua đường mua một tờ, xem lướt qua:
+
+– Này, thằng nhóc kia, làm gì có bí mật với nạnnhân nào?
+
+– Đó chính là bí mật khủng khiếp mà ông là nạn nhân.
+
+– !?
+
+– Báo đây! Bí mật khủng khiếp, đã có năm mươi mốt nạn nhân… Báo đây…</item>
+        <item>Có một bà đỡ khá lành nghề nhưng hay mất bình tĩnh. Người ta gọi bà đến đỡ một ca đẻ con so, tới với hòm dụng cụ trong tay, bà nói với người chồng:
+
+– Mời anh ra ngoài, cần gì tôi sẽ gọi.
+
+Sản phụ đã bắt đầu la hét. Khoảng 10 phút sau, bà thò đầu ra cửa và nói:
+
+– Anh có kìm không?
+
+– Hả?! Anh chồng tròn mắt hỏi.
+
+– Vâng, kìm, nhanh lên! Không hả hở gì hết, tôi biết việc tôi phải làm.
+
+Có kìm rồi, khoảng 5 phút sau, bà lại xuất hiện ở cửa:
+
+– Anh có cái cờ lê to không?
+
+– Cờ lê à? Lạy chúa, điều gì đã xảy ra với vợtôi?
+
+– À… không sao, nhưng tôi cần một cái cờlê.
+
+Người chồng bâng khuâng ngắm cái cờ lê rồi miễn cưỡng đưa nó cho bà ta. Cửa khép lại, tiếng kim loại va chạm nhau xủng xoảng, két… két. Anh chồng ở ngoài nghiến chặt răng, mặt tái dại, chân tay run bần bật. Được một lát, thở hổn hển, mặt nhễ nhại mồ hôi, bà thò đầu ra cửa quát:
+
+– Hãy nghe đây, tìm ngay một cái búa tạ, nếu chậm thì không kịp mất!
+
+Đến nước này, anh chồng không chịu nổi nữa, xô cửa xông vào, trước mắt anh là nền nhà ngổn ngang kìm, búa… và hòm dụng cụ chưa mở được.</item>
+        <item>Ngày tận thế, thiên đàng và địa ngục tranh chấp lãnh thổ trên mặt đất. Bên bàn đàm phán, Satan – đại diện địa ngục- đề nghị sẽ có một trận đá bóng để giải quyết vấn đề này. Trợ lýcủa Satan nói nhỏ:
+
+– Như thế sẽ rất bất lợi cho chúng ta, bởi tất cả các cầu thủ giỏi đã lên thiên đàng.
+
+– Đừng lo, ngươi không nhớ là tất cả các trọng tài đều đã xuống địa ngục sao?</item>
+
+    </string-array>
+    <string-array name="listTitleTongHop">
+        <item>Bớt 5 đô la</item>
+        <item>Mười đô la tồi tệ</item>
+        <item>Ông nói về ai?</item>
+        <item>Mỗi tháng 2 lần</item>
+        <item>Theo trí nhớ</item>
+        <item>Bất lịch sự</item>
+        <item>Quán tính</item>
+        <item>Mấy lần?</item>
+        <item>Gậy ông đập lưng ông</item>
+        <item>Con gái vâng lời</item>
+    </string-array>
+    <string-array name="listContentTongHop">
+        <item>Cảnh sát điều tra về cái chết bí ẩn của một nhà kinh doanh cỡ lớn, ông ta nhẩy từ cửa sổ văn phòng của ông ta trên tầng 11 xuống. Cô thứ ký dáng thùy mị nết na của ông ta khai:
+
+“Sau tuần thứ nhất, tôi được tăng lương 20 đô la. Cuối tuần thứ 2, ông ấy cho tôi tấm áo dạ hội rất đẹp. Cuối tuần thứ 3, ông ấy cho tôi một khăn choàng bằng lông chồn tuyệt mỹ. Thế rồi chiều hôm đó, ông gọi tôi vào phòng giấy và hỏi tôi có chịu làm tình với ông không. Tôi bảo tôi bằng lòng và nói thêm rằng, vì ông rất tốt với tôi, nên ông chỉ cần trả tôi 5 đô la, mặc dù tôi tính tiền cho mọi đàn ông khác trong văn phòng là 10 đô la. Đúng lúc ấy ông nhẩy ra ngoài cửa sổ”.</item>
+        <item>Một nhà kinh doanh trung niên đem vợ sang Paris. Sau khi đi khắp thành phố mua sắm, ông xin với vợ cho một ngày xả hơi.
+
+Vừa thoát khỏi mụ vợ già, ông đến ngay quán rượu và cuối cùng vớ được một ả gái điếm xinh đẹp. Ả đòi năm chục còn ông thì trả mười. Thế là không thỏa thuận được.
+
+Tối hôm đó ông đưa vợ đến một hiệu ăn sang trọng và ở đó ông thấy ả gái điếm xinh đẹp ban chiều ngồi bên chiếc bàn gần cửa.
+
+“Thấy chưa, quý ông” – ả nói, lúc vợ chồng ông đi ngang qua – Xem ông kiếm được thứ như thế nào với mười đô la tồi tệ của ông?</item>
+        <item>Luật sư bào chữa nói về bị cáo, thân chủ của mình:
+– Trước mặt quý tòa là một người cao thượng, có giáo dục, trung thực, tỉnh táo…
+Bị cáo ngắt lời luật sư và nói với tòa:
+– Thưa tòa, ông luật sư này thật không tốt. Tôi thuê ông ấy để ông ấy bênh vực tôi, vậy mà từ nãy ông ấy lại toàn nói về ai đó khác.</item>
+        <item>Chồng đặt báo xuống, nhìn vợ nói: “Anh đọc thấy ở Braxin, phụ nữ trả nam giới bảy đô la mỗi lần nam giới nằm với họ. Cái lợi ấy ta chẳng nên bỏ qua. Anh sẽ đi chuyến tàu biển gần nhất”!
+Vợ kêu lên: “Em đi với anh”
+– Anh cần em làm gì kia chứ? – chồng phản đối
+Vợ cãi: “Em muốn xem anh sống thế nào với 14 đô la mỗi tháng”</item>
+        <item>Grace và Mary học cùng một trường. Cặp đôi này vừa có một kỳ nghỉ hè hết sức thú vị tại một miền quê. Tại đó họ còn làm quen với một họa sỹ tài ba cũng đang đi vẽ cảnh nông thôn. Ít lâu sau, trở về thành phố, họ nhận được nhận lời mời của ông họa sỹ này đến xem cuộc trưng bày tranh của ông ta.
+
+Lúc họ đến gần một bức tranh khỏa thân vẽ hết sức táo bạo. Grace không thể không nhận thấy cô gái trong tranh giống hệt cô bạn gái Mary của mình.
+– Mary, cậu hổn hển- Bức tranh này giống hệt em, chẳng lẽ em lại làm mẫu khỏa thân cho ông ấy?
+– Tất nhiên là không – Mary đỏ mặt lắp bắp- hẳn là ông ấy vẽ bức tranh dựa theo trí nhớ.</item>
+        <item>Sau cuộc đi săn, huân tước Duffingham về nhà có phần hơi sớm hơn thường lệ và thấy phu nhân Duffingham đang trong tư thế tội lỗi cùng với người bạn thân nhất của huân thức là Ngài Archbald Carpley.
+
+Huân tước Duffingham đứng sững lại ở giữa cửa phòng ngủ, lớn tiếng quát mắng vợ về sự không chung thủy. Giọng gầm thét, ông nhắc lại cho vợ nghe là ông đã cứu bà ra khỏi cuộc sống thảm hại trong khu phố lầm than của thành phố London, đem đến cho bà kẻ hầu người hạ, áo quần và đồ trang sức đắt tiền như thế nào….
+
+Vì phu nhân Duffingham khóc như mưa như gió, ngài huân tước bèn chuyển cơn giận giữ sang người đàn ông mà ông vẫn đinh ninh là bạn: “Còn ông nữa, Carpley, ít nhất ông cũng có thể ngừng lại trong khi tôi đang nói chứ”!</item>
+        <item>Ba giờ sáng, hai vợ chồng nhà nọ đang ngủ. Bỗng bà vợ ngủ mê kêu ré lên:
+– Chết rồi, chồng em về!
+Ông chồng tỉnh ngay dậy, quơ vội quần áo nhảy ra cửa sổ.</item>
+        <item>Trong lúc xem triển lãm gia súc trong một chợ quê cùng chồng, bà vợ kênh kiệu hỏi một trong những người nuôi bò đực là mỗi tuần họ cho bò của họ làm cái chức năng giống đực của chúng mấy lần:
+– Khoảng 4-5 lần, người chủ bò trả lời.
+Quay sang nhìn chồng có vẻ khỉnh bỉ bà nói: “Anh thấy chưa, bốn hoặc năm lần chưa phải đã là nhiều nếu so với những con loại xuất sắc”
+Hiểu ra là mình đã góp thêm vào cái thói dằn vặt chồng của người phụ nữ kia, người nuôi bò đực vội nói: “Tất nhiên là không bao giờ chúng tôi đưa cùng một con bò cái vào 2 lần liền”</item>
+        <item>Lúc chồng đi làm, cậu con trai lên bốn nói với mẹ: “Lúc mẹ đi vắng, bố đưa chị sen lên gác và…”
+Mẹ cậu ngăn lại, bảo: “Để tối, lúc bồ về con hãy kể nốt”
+Trong bữa ăn tối hôm đó, bà ta nói: “Bobby, bây gờ con có thể kể nốt câu chuyện”
+Vâng, bố đưa chị sên lên gác và làm giống như mẹ làm với bác Charlic lúc bố đi câu cá ấy”</item>
+        <item>Mẹ cô dâu có một số quan điểm cổ hủ về hôn nhân, và bà truyện dạy cho con gái:
+– Đừng bao giờ để chồng con nhìn thấy con hoàn toàn khỏa thân- bà khuyên- bao giờ con cũng phải mang một thứ gì đó trên người.
+– Vâng thưa mẹ – cô gái vâng lời đáp.
+Sau khi cưới hai tuần, cô gái cùng chồng sắp sửa lên giường thì anh chồng hỏi: “Em yêu, trong gia đình em có ai bị tâm thần không đấy?”
+– Theo em biết thì không – cô gái trả lời- tại sao anh lại hỏi như vậy?
+– Có đấy- anh chồng đáp- Chúng mình cưới nhau đã được hai tuần lễ vậy mà đêm nào em cũng đội cái mũ tồi tệ ấy lúc nằm trên giường.</item>
+    </string-array>
 </resources>
