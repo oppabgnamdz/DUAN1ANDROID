@@ -61,7 +61,22 @@ public class Story extends Fragment {
                 stories = storyDao.getAllStory("Truyện cười Thế Giới");
                 adapterStory = new AdapterStory(stories);
                 break;
-
+            case 2:
+                stories = storyDao.getAllStory("Truyện cười Việt Nam");
+                adapterStory = new AdapterStory(stories);
+                break;
+            case 3:
+                stories = storyDao.getAllStory("Truyện cười dân gian");
+                adapterStory = new AdapterStory(stories);
+                break;
+            case 4:
+                stories = storyDao.getAllStory("Truyện cười hiện đại");
+                adapterStory = new AdapterStory(stories);
+                break;
+            case 5:
+                stories = storyDao.getAllStory("Truyện cười Tổng hợp");
+                adapterStory = new AdapterStory(stories);
+                break;
         }
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         lvListStory.setLayoutManager(linearLayoutManager);

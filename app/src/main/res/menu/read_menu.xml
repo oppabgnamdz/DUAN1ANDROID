@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/like"
+        android:title="share"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/share"
+        android:title="share"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/setting"
+        android:title="share"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/small_size"
+                android:title="Chữ nhỏ"
+                app:showAsAction="always"></item>
+        <item
+            android:id="@+id/normal_size"
+            android:title="Chữ vừa"
+            app:showAsAction="always"></item>
+        <item
+            android:id="@+id/big_size"
+            android:title="Chữ to"
+            app:showAsAction="always"></item>
+        <item
+                android:id="@+id/black_white"
+                android:title="Giao diện tối"
+                app:showAsAction="always"
+            android:checkable="true"></item>
+        </menu>
+    </item>
+</menu>

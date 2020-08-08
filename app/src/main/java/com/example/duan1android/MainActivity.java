@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
             loadTypeData();
             loadStory("Vova");
             loadStory("Thế Giới");
+            loadStory("Việt Nam");
+            loadStory("dân gian");
+            loadStory("hiện đại");
+            loadStory("Tổng hợp");
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -65,12 +69,6 @@ public class MainActivity extends AppCompatActivity {
         Log.e("data", "" + width + " " + height);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -96,6 +94,19 @@ public class MainActivity extends AppCompatActivity {
         switch (name) {
             case "Thế Giới":
                 name2 = "TheGioi";
+                break;
+            case "Việt Nam":
+                name2 = "VietNam";
+                break;
+            case "dân gian":
+                name2 = "DanGian";
+                break;
+            case "hiện đại":
+                name2 = "HienDai";
+                break;
+            case "Tổng hợp":
+                name2 = "TongHop";
+                break;
         }
         String title[] = resources.getStringArray(resources.getIdentifier("listTitle" + name2, "array", getPackageName()));
         String content[] = resources.getStringArray(resources.getIdentifier("listContent" + name2, "array", getPackageName()));

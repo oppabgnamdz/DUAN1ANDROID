@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#35EDBF</color>
+    <color name="colorAccent">#f1f1f1</color>
     <color name="split">#74A599</color>
     <color name="bgCategory">#FDF5CB</color>
+    <color name="dark">#000</color>
+    <color name="white">#fff</color>
 </resources>
