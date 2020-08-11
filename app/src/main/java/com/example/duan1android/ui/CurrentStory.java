@@ -32,7 +32,10 @@ public class CurrentStory extends Fragment {
     TextView tvTitleStory;
     TextView tvContentStory;
     ScrollView scBack;
+    SharedPreferences sharedPref;
+    SharedPreferences.Editor editor;
     boolean isChecked = false;
+    int lightState;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,13 +50,14 @@ public class CurrentStory extends Fragment {
         tvTitleStory = view.findViewById(R.id.tvTitleStory);
         tvContentStory = view.findViewById(R.id.tvContentStory);
         scBack = view.findViewById(R.id.scBack);
+        sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        editor = sharedPref.edit();
         storyDao = new StoryDao(getContext());
         Bundle bundle = this.getArguments();
         if (bundle != null) {
             nameStory = bundle.getString("nameStory");
             nameType = bundle.getString("nameType");
-            SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPref.edit();
+
             editor.putString("nameStory", nameStory);
             editor.putString("nameType", nameType);
             editor.commit();
@@ -64,8 +68,8 @@ public class CurrentStory extends Fragment {
                 }
             }
         } else {
-            SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
-            if (sharedPref != null) {
+//            sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+//            if (sharedPref != null) {
                 nameStory = sharedPref.getString("nameStory", "false");
                 nameType = sharedPref.getString("nameType", "false");
                 Log.e("name",nameStory + nameType);
@@ -76,11 +80,23 @@ public class CurrentStory extends Fragment {
                         tvContentStory.setText(storyDao.getAllStory(nameType).get(i).getStoryContent());
                     }
                 }
-            }
+//            }
 
 
         }
-
+        lightState = sharedPref.getInt("lightState", 0);
+        if(lightState == 0){
+            isChecked = false;
+            scBack.setBackgroundColor(getResources().getColor(R.color.white));
+            tvContentStory.setTextColor(getResources().getColor(R.color.split));
+            tvTitleStory.setTextColor(getResources().getColor(R.color.split));
+        }
+        else {
+            isChecked = true;
+            scBack.setBackgroundColor(getResources().getColor(R.color.dark));
+            tvContentStory.setTextColor(getResources().getColor(R.color.colorAccent));
+            tvTitleStory.setTextColor(getResources().getColor(R.color.colorAccent));
+        }
         return view;
     }
 
@@ -130,12 +146,16 @@ public class CurrentStory extends Fragment {
         else if(item.getItemId() == R.id.black_white){
             isChecked = !item.isChecked();
             item.setChecked(isChecked);
-            if(isChecked){
+            if(isChecked == true){
+                editor.putInt("lightState", 1);
+                editor.commit();
                 scBack.setBackgroundColor(getResources().getColor(R.color.dark));
                 tvContentStory.setTextColor(getResources().getColor(R.color.colorAccent));
                 tvTitleStory.setTextColor(getResources().getColor(R.color.colorAccent));
             }
             else {
+                editor.putInt("lightState", 0);
+                editor.commit();
                 scBack.setBackgroundColor(getResources().getColor(R.color.white));
                 tvContentStory.setTextColor(getResources().getColor(R.color.split));
                 tvTitleStory.setTextColor(getResources().getColor(R.color.split));
