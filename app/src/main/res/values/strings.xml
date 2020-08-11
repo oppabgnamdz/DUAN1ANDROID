@@ -6,7 +6,15 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
+    <string name="aboutus">Hiện nay khi đời sống của con người tăng lên, cũng khiến thời gian của họ
+ít đi và mọi người vì thế cũng không dùng nhưng quyển sách dày hàng trang
+giấy để đọc truyện cười nữa và thay vào đó là nhưng chiếc điện thoại
+smaxphone những chiếc ipad để có thể tìm kiếm và đọc chúng một cách nhanh
+nhất. Hiểu được vấn đề này chúng tôi đã xây dựng ứng dụng đọc truyện cười,
+ứng dụng sẽ đáp ứng nhu cầu tìm kiếm nhưng câu truyện hay, không nhưng
+vậy nó còn giúp cho người đọc có nhưng giờ giải trí thư gian sau nhưng giờ
+làm việc căng thẳng, ngoài ra chúng tôi còn giúp các bạn tiết kiệm thời gian để
+có những giờ giải trí chất lượng nhất.</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
