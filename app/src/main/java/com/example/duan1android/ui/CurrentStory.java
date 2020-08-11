@@ -8,6 +8,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,7 +20,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.duan1android.Adapter.AdapterViewPager;
 import com.example.duan1android.DAO.StoryDao;
 import com.example.duan1android.Model.Story;
 import com.example.duan1android.R;
@@ -29,13 +32,15 @@ public class CurrentStory extends Fragment {
     String nameStory;
     String nameType;
     StoryDao storyDao;
-    TextView tvTitleStory;
-    TextView tvContentStory;
+    ViewPager pager;
     ScrollView scBack;
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
     boolean isChecked = false;
     int lightState;
+    int positionPage;
+    AdapterViewPager adapterViewPager;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +52,7 @@ public class CurrentStory extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_current_story, container, false);
-        tvTitleStory = view.findViewById(R.id.tvTitleStory);
-        tvContentStory = view.findViewById(R.id.tvContentStory);
+        pager = view.findViewById(R.id.viewPager);
         scBack = view.findViewById(R.id.scBack);
         sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
         editor = sharedPref.edit();
@@ -57,45 +61,45 @@ public class CurrentStory extends Fragment {
         if (bundle != null) {
             nameStory = bundle.getString("nameStory");
             nameType = bundle.getString("nameType");
+            adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+            pager.setAdapter(adapterViewPager);
+            for (int i = 0; i < storyDao.getAllStory(nameType).size(); i++) {
+                if (nameStory.equals(storyDao.getAllStory(nameType).get(i).getStoryName())) {
+                    positionPage = i;
+                }
+            }
+            pager.setCurrentItem(positionPage);
+            pager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+                @Override
+                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
+                }
+
+                @Override
+                public void onPageSelected(int position) {
+                    positionPage = position;
+                    editor.putInt("positionPage", positionPage);
+                    editor.commit();
+                }
+
+                @Override
+                public void onPageScrollStateChanged(int state) {
+
+                }
+            });
+
+            editor.putInt("positionPage", positionPage);
             editor.putString("nameStory", nameStory);
             editor.putString("nameType", nameType);
             editor.commit();
-            for (int i = 0; i < storyDao.getAllStory(nameType).size(); i++) {
-                if (nameStory.equals(storyDao.getAllStory(nameType).get(i).getStoryName())) {
-                    tvTitleStory.setText(nameStory);
-                    tvContentStory.setText(storyDao.getAllStory(nameType).get(i).getStoryContent());
-                }
-            }
-        } else {
-//            sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
-//            if (sharedPref != null) {
-                nameStory = sharedPref.getString("nameStory", "false");
-                nameType = sharedPref.getString("nameType", "false");
-                Log.e("name",nameStory + nameType);
-
-                for (int i = 0; i < storyDao.getAllStory(nameType).size(); i++) {
-                    if (nameStory.equals(storyDao.getAllStory(nameType).get(i).getStoryName())) {
-                        tvTitleStory.setText(nameStory);
-                        tvContentStory.setText(storyDao.getAllStory(nameType).get(i).getStoryContent());
-                    }
-                }
-//            }
-
-
         }
         lightState = sharedPref.getInt("lightState", 0);
-        if(lightState == 0){
+        if (lightState == 0) {
             isChecked = false;
             scBack.setBackgroundColor(getResources().getColor(R.color.white));
-            tvContentStory.setTextColor(getResources().getColor(R.color.split));
-            tvTitleStory.setTextColor(getResources().getColor(R.color.split));
-        }
-        else {
+        } else {
             isChecked = true;
             scBack.setBackgroundColor(getResources().getColor(R.color.dark));
-            tvContentStory.setTextColor(getResources().getColor(R.color.colorAccent));
-            tvTitleStory.setTextColor(getResources().getColor(R.color.colorAccent));
         }
         return view;
     }
@@ -106,71 +110,88 @@ public class CurrentStory extends Fragment {
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    @Override
-    public void onPrepareOptionsMenu(@NonNull Menu menu) {
-        super.onPrepareOptionsMenu(menu);
-        MenuItem checkable = menu.findItem(R.id.black_white);
-        checkable.setChecked(isChecked);
-        MenuItem like = menu.findItem(R.id.like);
-        Story story = storyDao.getStory(nameStory);
-        if(story.getLikeStatus() == 0){
-            like.setIcon(R.drawable.ic_baseline_favorite_24);
-        }
-        else {
-            like.setIcon(R.drawable.ic_baseline_favorite_24_red);
-        }
-    }
+//    @Override
+//    public void onPrepareOptionsMenu(@NonNull Menu menu) {
+//        super.onPrepareOptionsMenu(menu);
+//        MenuItem checkable = menu.findItem(R.id.black_white);
+//        checkable.setChecked(isChecked);
+//        MenuItem like = menu.findItem(R.id.like);
+//        Story story = storyDao.getStory(nameStory);
+//        if (story.getLikeStatus() == 0) {
+//            like.setIcon(R.drawable.ic_baseline_favorite_24);
+//        } else {
+//            like.setIcon(R.drawable.ic_baseline_favorite_24_red);
+//        }
+//    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Story story = storyDao.getStory(nameStory);
-        if(item.getItemId() == R.id.share){
+        if (item.getItemId() == R.id.share) {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_SUBJECT, story.getStoryName());
-            intent.putExtra(Intent.EXTRA_TEXT,story.getStoryContent() );
-            startActivity(Intent.createChooser(intent, "share" ));
-        }
-        else if(item.getItemId() == R.id.small_size){
-            tvContentStory.setTextSize(10);
-            tvTitleStory.setTextSize(12);
-        }
-        else if(item.getItemId() == R.id.normal_size){
-            tvContentStory.setTextSize(15);
-            tvTitleStory.setTextSize(19);
-        }
-        else if(item.getItemId() == R.id.big_size){
-            tvContentStory.setTextSize(20);
-            tvTitleStory.setTextSize(25);
-        }
-        else if(item.getItemId() == R.id.black_white){
+            intent.putExtra(Intent.EXTRA_TEXT, story.getStoryContent());
+            startActivity(Intent.createChooser(intent, "share"));
+        } else if (item.getItemId() == R.id.small_size) {
+            editor.putInt("sizeTitle", 12);
+            editor.putInt("sizeContent", 10);
+            editor.commit();
+            adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+            pager.setAdapter(adapterViewPager);
+            pager.setCurrentItem(positionPage);
+        } else if (item.getItemId() == R.id.normal_size) {
+            editor.putInt("sizeTitle", 19);
+            editor.putInt("sizeContent", 15);
+            editor.commit();
+            adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+            pager.setAdapter(adapterViewPager);
+            pager.setCurrentItem(positionPage);
+
+        } else if (item.getItemId() == R.id.big_size) {
+            editor.putInt("sizeTitle", 25);
+            editor.putInt("sizeContent", 20);
+            editor.commit();
+            adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+            pager.setAdapter(adapterViewPager);
+            pager.setCurrentItem(positionPage);
+
+        } else if (item.getItemId() == R.id.black_white) {
             isChecked = !item.isChecked();
             item.setChecked(isChecked);
-            if(isChecked == true){
+            if (isChecked == true) {
                 editor.putInt("lightState", 1);
                 editor.commit();
                 scBack.setBackgroundColor(getResources().getColor(R.color.dark));
-                tvContentStory.setTextColor(getResources().getColor(R.color.colorAccent));
-                tvTitleStory.setTextColor(getResources().getColor(R.color.colorAccent));
-            }
-            else {
+                adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+                pager.setAdapter(adapterViewPager);
+                pager.setCurrentItem(positionPage);
+
+            } else {
                 editor.putInt("lightState", 0);
                 editor.commit();
                 scBack.setBackgroundColor(getResources().getColor(R.color.white));
-                tvContentStory.setTextColor(getResources().getColor(R.color.split));
-                tvTitleStory.setTextColor(getResources().getColor(R.color.split));
+                adapterViewPager = new AdapterViewPager(getFragmentManager(), nameType, storyDao.getAllStory(nameType).size());
+                pager.setAdapter(adapterViewPager);
+                pager.setCurrentItem(positionPage);
             }
-        }
-        else if(item.getItemId() == R.id.like){
-            if(story.getLikeStatus() == 0){
-                story.setLikeStatus(1);
-                long update = storyDao.updateStory(story);
-                item.setIcon(R.drawable.ic_baseline_favorite_24_red);
-            }
-            else {
-                story.setLikeStatus(0);
-                long update = storyDao.updateStory(story);
-                item.setIcon(R.drawable.ic_baseline_favorite_24);
+        } else if (item.getItemId() == R.id.like) {
+            if (storyDao.getAllStory(nameType).get(positionPage).getLikeStatus() == 0) {
+                Story story1 = storyDao.getAllStory(nameType).get(positionPage);
+                story1.setLikeStatus(1);
+                long update = storyDao.updateStory(story1);
+                if (update > 0) {
+                    Toast.makeText(getContext(), "Đã thêm vào danh sách yêu thích", Toast.LENGTH_SHORT).show();
+                }
+//                item.setIcon(R.drawable.ic_baseline_favorite_24_red);
+            } else {
+                Story story1 = storyDao.getAllStory(nameType).get(positionPage);
+                story1.setLikeStatus(0);
+                long update = storyDao.updateStory(story1);
+                if (update > 0) {
+                    Toast.makeText(getContext(), "Đã xóa khỏi danh sách yêu thích", Toast.LENGTH_SHORT).show();
+                }
+//                item.setIcon(R.drawable.ic_baseline_favorite_24);
             }
         }
         return super.onOptionsItemSelected(item);

@@ -32,4 +32,9 @@
         android:name="com.example.duan1android.ui.About"
         android:label="Giới thiệu"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_onepagecurrentstory"
+        android:name="com.example.duan1android.ui.OnePageCurrentStory"
+        android:label="Đang đọc"
+        tools:layout="@layout/fragment_one_page_current_story" />
 </navigation>

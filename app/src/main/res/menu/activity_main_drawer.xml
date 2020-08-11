@@ -14,7 +14,7 @@
             android:icon="@drawable/favourite"
             android:title="Yêu thích" />
         <item
-            android:id="@+id/nav_currentstory"
+            android:id="@+id/nav_onepagecurrentstory"
             android:icon="@drawable/current"
             android:title="Đang đọc" />
         <item
